@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VRoom | News</title>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <script src="js/modernizr.custom.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="logo/logo.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/set2.css" />
+  <link rel="stylesheet" href="css/news.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/rellax/1.7.1/rellax.min.js'></script>
+  <script type="text/javascript" src="js/wow.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+</head>
+
+<body style="font-family: 'Montserrat', sans-serif;font-weight: 900!important" class="wow zoomIn">
+  <style type="text/css">
+    body {
+      background-color: #F7F7F7 !important;
+      transition: all 0.5s ease-in-out
+    }
+
+    #contact {
+      background-color: white;
+      transition: all 0.5s ease-in-out
+    }
+
+    #footer {
+      background-color: #343b40;
+      transition: all 0.5s ease-in-out
+    }
+  </style>
+  <script type="text/javascript">
+    new WOW().init();
+  </script>
+
+  <!--Dark Mode-->
+
+  <script type="text/javascript">
+    $("body").toggleClass("dark");
+    $(document).ready(function () {
+
+      $("#mode").click(function () {
+        $("body").toggleClass("dark")
+      });
+    });
+  </script>
+  <style type="text/css">
+    .dark {
+      background-color: black !important;
+      transition: all 0.5s ease-in-out
+    }
+
+    .dark h1 {
+      color: white;
+      transition: all 0.5s ease-in-out
+    }
+
+    .dark input {
+      color: black;
+      transition: all 0.5s ease-in-out
+    }
+
+    .dark #contact {
+      background-color: black;
+      color: white;
+      transition: all 0.5s ease-in-out
+    }
+
+    .dark #nav {
+      background-color: black;
+      transition: all 0.5s ease-in-out
+    }
+
+    .dark #footer {
+      background-color: black;
+      transition: all 0.5s ease-in-out
+    }
+
+    .dark #mo {
+      background-color: black;
+      color: white;
+      transition: all 0.5s ease-in-out
+    }
+
+    .dark #mo input {
+      color: black;
+      transition: all 0.5s ease-in-out
+    }
+
+    .dark #closee {
+      color: white;
+      transition: all 0.5s ease-in-out
+    }
+
+    .dark #closee:hover {
+      color: #FF1800;
+    }
+
+    .dark #mod {
+      background-color: black;
+      color: white;
+      transition: all 0.5s ease-in-out
+    }
+
+    .dark #mod input {
+      color: black;
+      transition: all 0.5s ease-in-out
+    }
+  </style>
+  <script>
+  AOS.init();
+</script>
+
+  <!--Cross Animation-->
+  <style type="text/css">
+    .bar1,
+    .bar2,
+    .bar3 {
+      transition: 0.3s;
+    }
+
+    .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+      transform: rotate(-45deg) translate(-7px, 0px);
+    }
+
+    .change .bar2 {
+      opacity: 0;
+    }
+
+    .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-7px, -8px);
+      transform: rotate(45deg) translate(-8px, -2px);
+    }
+  </style>
+  <script type="text/javascript">
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+  </script>
+  <!-- Search Modal -->
+  <div id="modalSearch" class="modal fade wow zoomIn" role="dialog">
+    <div class="modal-dialog ">
+
+      <!-- Modal content-->
+      <div class="modal-content" id="mo">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" id="closee"><i class="fas fa-times"></i></button>
+          <h4 class="modal-title">Search VRoom</h4>
+        </div>
+        <div class="modal-body">
+          <script>
+            (function () {
+              var cx = '011178486855581426958:ri5d8bbsa-k';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+          </script>
+
+          <gcse:search></gcse:search>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" style="background-color:blue"
+            data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <style type="text/css">
+    .reset-box-sizing,
+    .reset-box-sizing *,
+    .reset-box-sizing *:before,
+    .reset-box-sizing *:after,
+    .gsc-inline-block {
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+    }
+
+    input.gsc-input,
+    .gsc-input-box,
+    .gsc-input-box-hover,
+    .gsc-input-box-focus,
+    .gsc-search-button {
+      box-sizing: content-box;
+      line-height: normal;
+    }
+
+    .modal .modal-dialog {
+      width: 800px;
+      max-width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#gsearch").click(function () {
+        var q = $("#query").val();
+        $("#gsc-i-id1").val(q);
+        $(".gsc-search-button").click();
+        $("#query").val("");
+      })
+    })
+  </script>
+  <!--Navbar Section-->
+
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="nav">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <div class="navbar-toggle" style="border:none!important; background-color: inherit;" data-toggle="collapse"
+          data-target="#myNavbar" onclick="myFunction(this)">
+          <span class="icon-bar bar1"></span>
+          <span class="icon-bar bar2"></span>
+          <span class="icon-bar bar3"></span>
+        </div>
+        <a class="navbar-brand" href="#">VRoom</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="supercars.html">Supercars</a></li>
+          <li class="active"><a href="#">News</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">More <span class="caret"></span></a>
+            <ul class="dropdown-menu" id="dw">
+              <li><a href="vlog.html">Vloggers</a></li>
+              <li><a href="com.html">Bloggers</a></li>
+              <li class="disabled"><a href="#">Newsletter</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="signup.html"><span class="fa fa-user"></span> Sign Up</a></li>
+          <li><a href="login.html"><i class="fas fa-sign-in-alt"></i></span> Login</a></li>
+          <li class=" hidden-xs"><label class="switch">
+              <center><input type="checkbox" id="mode" checked><span class="slider round"></span></center>
+            </label></li>
+        </ul>
+        <form class="navbar-form navbar-right" action="#">
+          <div class="input-group search-box">
+            <input type="search" q="googlesearch" class=" search-txt" placeholder="Search" id="query">
+            <div class="input-group-btn">
+              <a class="search-btn" data-toggle="modal" data-target="#modalSearch" id="gsearch">
+                <i class="fas fa-search" style="font-weight: 900;font-size: 20px"></i>
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <style type="text/css">
+    .search-box {
+      background: #2f3640;
+      height: 10px;
+      border-radius: 40px;
+      padding: 2px;
+    }
+
+    .search-box:hover .search-txt {
+      width: 240px;
+
+    }
+
+    .search-box:hover .search-btn {
+      background: white;
+      color: red;
+      text-decoration: none;
+    }
+
+    .search-btn {
+      color: #e84118;
+      float: right;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #2f3640;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.4s;
+      color: white;
+      cursor: pointer;
+    }
+
+    .search-btn i {
+      font-size: 20px;
+    }
+
+    .search-txt {
+      border: none;
+      background: none;
+      outline: none;
+      float: left;
+      padding-left: 2px;
+      color: white;
+      font-size: 12px;
+      transition: 0.4s;
+      line-height: 30px;
+      width: 0px;
+      font-weight: bold;
+    }
+  </style>
+  <style>
+    .switch {
+
+      position: relative;
+      top: 32%;
+      display: inline-block;
+      width: 50px;
+      height: 34px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 50%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+      top: 0%;
+    }
+
+    input:checked+.slider {
+      background-color: #636565;
+    }
+
+    input:focus+.slider {
+      box-shadow: 0 0 1px black;
+    }
+
+    input:checked+.slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+  </style>
+
+
+  <div class="container " rellax-data-speed="-18">
+    <!-- Top Navigation -->
+    <div id="boxgallery" class="boxgallery" data-effect="effect-1">
+      <div class="panel"><img src="img/car1.jpg" alt="Image 1" /></div>
+      <div class="panel"><img src="img/car3.jpg" alt="Image 2" /></div>
+      <div class="panel"><img src="img/car5.jpg" alt="Image 3" /></div>
+      <div class="panel"><img src="img/car4.jpg" alt="Image 4" /></div>
+    </div>
+    <header class="codrops-header">
+
+    </header>
+  </div>
+
+  <!-- /container -->
+  <script src="js/classie.js"></script>
+  <script src="js/boxesFx.js"></script>
+  <script>
+    new BoxesFx(document.getElementById('boxgallery'));
+  </script>
+  <!--PARALAX-->
+
+
+  <div class="background">
+    <img class="rellax hidden-xs" style="margin-top:5%;left: 100%" rellax-data-speed="8"
+      src="https://raw.githubusercontent.com/YitingLiu/poem/master/codepen/31parallax/shape1.png">
+    <img class="rellax hidden-xs" style="margin-top:25%;left: 1.5%" rellax-data-speed="-6"
+      src="https://raw.githubusercontent.com/YitingLiu/poem/master/codepen/31parallax/shape4.png">
+    <img class="rellax hidden-xs" style="margin-top:45%;right: 8.5%" rellax-data-speed="3"
+      src="https://raw.githubusercontent.com/YitingLiu/poem/master/codepen/31parallax/shape7.png">
+    <img class="rellax hidden-xs" style="margin-top:67%;left: 22.5%" rellax-data-speed="7"
+      src="https://raw.githubusercontent.com/YitingLiu/poem/master/codepen/31parallax/shape8.png">
+    <img class="rellax hidden-xs" style="margin-top:80%;left: 92.5%" rellax-data-speed="-2"
+      src="https://raw.githubusercontent.com/YitingLiu/poem/master/codepen/31parallax/shape5.png">
+    <img class="rellax hidden-xs" style="margin-top:105% ;left:29%" rellax-data-speed="20"
+      src="https://raw.githubusercontent.com/YitingLiu/poem/master/codepen/31parallax/shape2.png">
+    <img class="rellax hidden-xs" style="margin-top:127%;right:0%" rellax-data-speed="-5"
+      src="https://raw.githubusercontent.com/YitingLiu/poem/master/codepen/31parallax/shape9.png">
+    <img class="rellax hidden-xs" style="margin-top:140%;left:100%" rellax-data-speed="1"
+      src="https://raw.githubusercontent.com/YitingLiu/poem/master/codepen/31parallax/shape3.png">
+    <img class="rellax hidden-xs" style="margin-top:160%;right: 12.5%" rellax-data-speed="6"
+      src="https://raw.githubusercontent.com/YitingLiu/poem/master/codepen/31parallax/shape6.png">
+    <img class="rellax hidden-xs" style="margin-top:180%;left: 45%" rellax-data-speed="9"
+      src="https://raw.githubusercontent.com/YitingLiu/poem/master/codepen/31parallax/shape3.png">
+    <img class="rellax hidden-xs" style="margin-top:120%;left: 60%" rellax-data-speed="-3"
+      src="https://raw.githubusercontent.com/YitingLiu/poem/master/codepen/31parallax/shape9.png">
+    <img class="rellax hidden-xs" style="margin-top:190%;left: 100%" rellax-data-speed="2"
+      src="https://raw.githubusercontent.com/YitingLiu/poem/master/codepen/31parallax/shape2.png">
+    <img class="rellax hidden-xs" style="margin-top:140% left:28%" rellax-data-speed="5"
+      src="https://raw.githubusercontent.com/YitingLiu/poem/master/codepen/31parallax/shape8.png">
+    <img class="rellax hidden-xs" style="margin-top:110%;left: 97.2%" rellax-data-speed="-4"
+      src="https://raw.githubusercontent.com/YitingLiu/poem/master/codepen/31parallax/shape5.png">
+  </div>
+  <div class="containerss">
+    <section class="left">
+      <div class="img" style="background: #839FD2; ">
+        <div class="grid img" style="height: inherit!important;width: inherit!important;">
+          <figure class="effect-apollo" style="height: inherit!important;width: inherit!important;">
+            <img src="news/n1.jpg">
+            <figcaption>
+              <h2>Jaguar <span>I-Pace</span></h2>
+              <p>Jaguar I-Pace bags 2019 World Car of the Year Award.</p>
+              <a href="#" data-toggle="modal" data-target="#n1">>View more</a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="ctnt" data-aos="flip-down" data-aos-duration="3000">
+        <div class="num">01</div>
+        <div class="sub">1-Jaguar I-Pace bags 2019 World Car of the Year Award.</div>
+        <div class="btn" data-toggle="modal" data-target="#n1">Learn More</div>
+      </div>
+    </section>
+
+    <!--MODAL NEWS 1-->
+    <div id="n1" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-sm">
+
+        <!-- Modal content-->
+        <div class="modal-content wow zoomIn" id="mod" style="opacity: .7;overflow: hidden;transition: 0s">
+          <div class="modal-body">
+            <h1>Jaguar I-Pace bags 2019 World Car of the Year Award</h1>
+            <p style="font-weight: 1200!important" >The all-electric Jaguar I-Pace SUV has just made history by becoming
+              the first model ever to win three World Car titles in the 15-year history of the awards. This latest win
+              for the I-Pace comes just weeks after it claimed the European Car of Year title, and affirms its status as
+              the most desirable premium electric vehicle (EV) in the worldThe 2019 World Car Awards were held at the
+              New York International Auto Show and was judged by a panel of 86 motoring journalists from 24 countries.
+              The Jaguar I-Pace was presented with the 2019 World Car of the Year, the World Car Design of the Year and
+              the World Green Car awards by the panel.Commenting on the latest award for the eco-friendly SUV, Dr Ralf
+              Speth, CEO, Jaguar Land Rover, said: “It is an honour that the Jaguar I-Pace has received these three
+              accolades from the prestigious World Car jurors. We started with an ideal, to move towards our Destination
+              Zero vision – zero emissions, zero accidents and zero congestion. The I-Pace is our first step to
+              achieving this, and it was conceived when EVs were little more than a niche choice. We started from a
+              clean sheet of paper to create a new benchmark – the world's best premium electric vehicle, and a true
+              Jaguar driver's car. For I-Pace to be awarded 2019 World Car of the Year, World Car Design of the Year and
+              World Green Car gives our first all-electric vehicle the ultimate recognition it deserves. I would like to
+              thank the team who have created I-Pace for their passion in making it so outstanding.”</p>
+            <button data-dismiss="modal" class="closemodal ">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <section class="right">
+      <div class="img" style="background: #7E4B5E;">
+        <div class="grid" style="height: inherit!important;width: inherit!important;">
+          <figure class="effect-apollo" style="height: inherit!important;width: inherit!important;">
+            <img src="news/n2.jpg">
+            <figcaption>
+              <h2>Chevrolet <span>Corvette</span></h2>
+              <p>Next-gen Chevrolet Corvette official reveal on July 18, 2019.</p>
+              <a href="#" data-toggle="modal" data-target="#n2">>View more</a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="ctnt " data-aos="flip-down" data-aos-duration="3000">
+        <div class="num" style="visibility: hidden;">02</div>
+        <div class="sub">2-Next-gen Chevrolet Corvette official reveal on July 18, 2019.</div>
+        <div class="btn" data-toggle="modal" data-target="#n2">Read More</div>
+      </div>
+    </section>
+    <!--MODAL News 2-->
+    <div id="n2" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-sm">
+
+        <!-- Modal content-->
+        <div class="modal-content wow zoomIn" id="mod" style="opacity: .7;overflow: hidden;transition: 0s">
+          <div class="modal-body">
+            <h1>Next-gen Chevrolet Corvette official!</h1>
+            <p style="font-weight: 1200!important">Chevrolet has officially announced that the next-gen Corvette is
+              going to be revealed in a stand-alone event on July 18, 2019. Chevrolet released the first official teaser
+              image along with the announcement of the reveal event. The image showcases a heavily camouflaged next-gen
+              Corvette with the reveal date on the side. No additional details have been released by Chevrolet yet.What
+              we do know is that the next-gen Corvette (known internally as the C8) will have a rear mid-engine layout.
+              This will be the first time in the Corvette’s 66-year history that it will leave the front-engine layout
+              in favour of a rear mid-engine one.C8 Corvette prototypes have already been spotted testing a few times at
+              the Nürburgring, and from the spied models we can tell that the new car has a cab-forward design with a
+              stretched rear end to accommodate the new rear mid-engine layout. It also sounds like Chevrolet has
+              equipped the C8 with a V8 engine and not downsized it to a V6.Sources from within General Motors have
+              stated that the upcoming C8 Corvette will be sold alongside a version of the current C7 Corvette. The C7
+              is likely to become the entry-level model of the range and be priced below the C8 Corvette. It is worth
+              noting that the next-gen C8 Corvette will undercut many of the other mid-engine supercars.Prior to this
+              announcement, the next-gen Corvette was expected to be launched at the upcoming 2019 New York Auto show
+              which is scheduled for April 19-28. We should have more details about the C8 Corvette closer to its
+              launch.</p>
+            <button data-dismiss="modal" class="closemodal ">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <section class="left">
+      <div class="img" style="background: #E67E48;">
+        <div class="grid" style="height: inherit!important;width: inherit!important;">
+          <figure class="effect-apollo" style="height: inherit!important;width: inherit!important;">
+            <img src="news/n3.jpg">
+            <figcaption>
+              <h2>Karma <span>Revero GT</span></h2>
+              <p>New Karma Revero GT, Pininfarina GT revealed.</p>
+              <a href="#" data-toggle="modal" data-target="#n3">View more</a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="ctnt " data-aos="flip-down" data-aos-duration="3000">
+        <div class="num" style="visibility: hidden;">03</div>
+        <div class="sub">3-New Karma Revero GT, Pininfarina GT revealed.</div>
+        <div class="btn" data-toggle="modal" data-target="#n3">Read More</div>
+      </div>
+    </section>
+    <!--MODAL News 3-->
+    <div id="n3" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-sm">
+
+        <!-- Modal content-->
+        <div class="modal-content wow zoomIn" id="mod" style="opacity: .7;overflow: hidden;transition: 0s">
+          <div class="modal-body">
+            <h1>New Karma GT designed by Pininfarina</h1>
+            <p style="font-weight: 1200!important">The Shanghai motor show saw US-based electric carmaker Karma
+              Automotive reveal a new version of its Europe-bound Karma GT designed by Pininfarina hybrid sedan, along
+              with a coupé version of the same, developed in conjunction with Italian design house Pininfarina.The
+              Chinese-backed Karma has also displayed a bold SC1 Vision Concept at the show. The SC1 is part of its
+              three-car ‘new dawn’ product showcase which will launch the brand into the Chinese market and highlight
+              its bold expansion plans.The original Revero GT was so far only sold in the US. The model was launched in
+              2016 and was a heavily reworked version of the Fisker Karma. The new model is due to go into production
+              later this year.While the current version of the Porsche Panamera 4 E-Hybrid rival uses a 264hp, 2.0-litre
+              four-cylinder General Motors-developed engine, with twin electric motors, the new model is equipped with a
+              BMW-developed unit, alongside a claimed ‘world-class electric drive system’.Karma claims the new system
+              produces a total output of around 535hp, with a 0-100kph time of 4.5sec. The unit will feature a 28kWh
+              battery, which should allow for around 129km of electric-only range.The new Karma GT designed by
+              Pininfarina two-door coupé sits on the same platform as the new Revero, and will use the same powertrain,
+              but features an extensively reworked body and interior developed in conjunction with Italian design house
+              Pininfarina.</p>
+            <button data-dismiss="modal" class="closemodal ">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <section class="right">
+      <div class="img" style="background: #EE82AC;">
+        <div class="grid" style="height: inherit!important;width: inherit!important;">
+          <figure class="effect-apollo" style="height: inherit!important;width: inherit!important;" >
+            <img src="news/n4.jpg">
+            <figcaption>
+              <h2>BMW <span>3 Series</span></h2>
+              <p>New BMW 3 Series LWB showcased at 2019 Shanghai motor show.</p>
+              <a href="#" data-toggle="modal" data-target="#n4">View more</a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="ctnt " data-aos="flip-down" data-aos-duration="3000">
+        <div class="num" style="visibility: hidden;">04</div>
+        <div class="sub">New BMW 3 Series LWB showcased at 2019 Shanghai motor show.</div>
+        <div class="btn" data-toggle="modal" data-target="#n4">View More</div>
+      </div>
+    </section>
+    <!--MODAL News 4-->
+    <div id="n4" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-sm">
+
+        <!-- Modal content-->
+        <div class="modal-content wow zoomIn" id="mod" style="opacity: .7;overflow: hidden;transition: 0s">
+          <div class="modal-body">
+            <h1>New BMW 3 Series LWB showcased</h1>
+            <p style="font-weight: 1200!important">BMW has revealed the long-wheelbase version of the new 3 Series sedan
+              at this year’s Shanghai motor show. It will, however, be offered exclusively in the Chinese market.The
+              extended version of the recently launched seventh-generation 3 Series has been reworked to offer extra
+              space in the rear, along with a number of new features. It fits a long trend of car firms making longer
+              versions of premium models for China.The stretched 3 Series’ wheelbase of 2,851mm is 41mm longer than the
+              regular car, and its total length is extended to 4,719mm. It is 1,827mm wide and 1,459mm high, with
+              increased track widths of 1,583mm at the front and 1,599mm at the rear.Powered by a four-cylinder
+              turbocharged petrol engine, the 3 Series long-wheelbase features comfort seats in the front and rear, and
+              a panoramic glass roof, among a number of features to meet the demands of Chinese customers.The machine
+              will be produced by joint venture firm BMW Brilliance Automotive, at its Tiexi plant in Shenyang in
+              Liaoning Province, where Chinese market versions of the regular 3 Series will also be produced.In China,
+              the 3 Series – in both standard and long-wheelbase forms – will also be offered with BMW’s new Intelligent
+              Personal Assistant System, which offers a range of digital services. It also responds to voice controls
+              with the prompt “hey BMW”.</p>
+            <button data-dismiss="modal" class="closemodal ">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <section class="left">
+      <div class="img" style="background: #35A170;">
+        <div class="grid" style="height: inherit!important;width: inherit!important;">
+          <figure class="effect-apollo" style="height: inherit!important;width: inherit!important;">
+            <img src="news/n5.jpg">
+            <figcaption>
+              <h2>Geely <span>Geometry</span></h2>
+              <p>Geometry A sedan by Geely unveiled in Shanghai.</p>
+              <a href="#" data-toggle="modal" data-target="#n5">View more</a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="ctnt " data-aos="flip-down" data-aos-duration="3000">
+        <div class="num" style="visibility: hidden;">05</div>
+        <div class="sub">5-Geometry A sedan by Geely unveiled in Shanghai.</div>
+        <div class="btn" data-toggle="modal" data-target="#n5">View More</div>
+      </div>
+    </section>
+    <!--MODAL News 5-->
+    <div id="n5" class="modal fade wow zoomIn" role="dialog">
+      <div class="modal-dialog modal-sm">
+
+        <!-- Modal content-->
+        <div class="modal-content" id="mod" style="opacity: .7;overflow: hidden;transition: 0s">
+          <div class="modal-body">
+            <h1>Geometry A sedan by Geely unveiled</h1>
+            <p style="font-weight: 1200!important">China's biggest car manufacturer, Geely, has launched its new
+              electric-only brand, Geometry, with a model that will rival the Tesla Model 3. The new car, called the
+              Geometry A, is on display at the Shanghai motor show.The Geometry A sedan is claimed to be capable of
+              410km in Standard Range form and 500km in Long Range form (both figures measured under the old NEDC
+              cycle). The former variant uses a 51.9kWh lithium-ion battery pack while the latter uses a 61.9kWh unit,
+              both provided by Chinese firm CATL.In comparison, the Tesla Model 3 Long Range has a 75kWh battery with a
+              544km range in the more realistic WLTP test. The Model 3 Standard Range, with a 50kWh battery, is
+              predicted to manage around 354km WLTP.Geely says the A can be fast-charged from 30-80 percent in just half
+              an hour. However, the carmaker hasn't specified how many kW is required from the power supply to achieve
+              that charging speed.Drive in the Geometry A is supplied by a permanent magnet synchronous motor with a
+              maximum output of 163hp and 250Nm of torque, resulting in a 0-100kph sprint time of 8.8sec.The A is
+              claimed to be the safest car in its segment. It offers a host of active safety technology, including
+              automatic emergency braking with pedestrian detection, automatic high beam control, front and rear moving
+              object detection, blind-spot monitoring, lane-keeping assistance, adaptive cruise control and a 360-degree
+              parking camera.</p>
+            <button data-dismiss="modal" class="closemodal ">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <section class="right">
+      <div class="img" style="background: #D4BF48;">
+        <div class="grid" style="height: inherit!important;width: inherit!important;">
+          <figure class="effect-apollo" style="height: inherit!important;width: inherit!important;">
+            <img src="news/n6.jpg">
+            <figcaption>
+              <h2>Porsche <span>911 Speedster</span></h2>
+              <p>Porsche 911 Speedster to be revealed in New York in production form.</p>
+              <a href="#" data-toggle="modal" data-target="#n6">View more</a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="ctnt " data-aos="flip-down" data-aos-duration="3000">
+        <div class="num" style="visibility: hidden;">06</div>
+        <div class="sub">6-Porsche 911 Speedster to be revealed in New York in production form.</div>
+        <div class="btn" data-toggle="modal" data-target="#n6">Learn More</div>
+      </div>
+    </section>
+    <!--MODAL News 6-->
+    <div id="n6" class="modal fade wow zoomIn" role="dialog">
+      <div class="modal-dialog modal-sm">
+
+        <!-- Modal content-->
+        <div class="modal-content" id="mod" style="opacity: .7;overflow: hidden;transition: 0s">
+          <div class="modal-body">
+            <h1>Porsche 911 Speedster to be revealed in New York</h1>
+            <p style="font-weight: 1200!important">Porsche will say farewell to the 991-generation 911 with a
+              limited-production Speedster variant, which will be unveiled at next week's New York motor show.Previewed
+              by a black and white image of the finished car that was sent by a customer to US website Carbuzz, the
+              Speedster will stay largely faithful to the concept version, barring a change in alloy wheel
+              design.Confirmed for production last summer and previewed by the Speedster concept, it’s the return of a
+              sought-after special variant first produced in the 1950s.The brand will produce 1948 examples of the
+              Speedster, a number marking the brand's 70th anniversary last year. The thinly disguised test mules, seen
+              testing alongside the latest 992-generation car, first showed the roof layout in detail.A heritage design
+              pack adds retro-inspired flourishes to the car, and Porsche hinted that the packs would be available on
+              other models.New 21-inch cross-spoke wheels feature and are likely to be carried over to the production
+              version, as is the car’s 4.0-litre flat-six engine, borrowed from the GT3, and manual gearbox.The concept
+              features details that celebrate Porsche’s early racing days, such as the 1950s-style central fuel tank cap
+              positioned in the middle of the bonnet.The shape of the Speedster takes influence from the original 356
+              1500 Speedster that has inspired 911 Speedsters for the 930, 964 and 997 generations.</p>
+            <button data-dismiss="modal" class="closemodal ">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <style type="text/css">
+    .closemodal {
+      background: transparent;
+      color: #45F57F;
+      border: 2px solid #45F57F;
+      border-radius: 10px;
+      padding: 0.5em
+    }
+
+    .closemodal:hover {
+      -webkit-animation: mymove 3s;
+      /* Safari 4.0 - 8.0 */
+      -webkit-animation-fill-mode: forwards;
+      /* Safari 4.0 - 8.0 */
+      animation: mymove 3s;
+      animation-fill-mode: forwards;
+    }
+
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes mymove {
+      from {
+        top: 0px;
+      }
+
+      to {
+        top: 0px;
+        border-color: darkgreen;
+      }
+    }
+
+    @keyframes mymove {
+      from {
+        top: 0px;
+      }
+
+      to {
+        top: 0px;
+        border-color: darkgreen;
+      }
+    }
+  </style>
+
+  <script type="text/javascript" src="js/news.js"></script>
+
+  <div class="container-fluid" style="padding: 3.2rem;z-index: -1!important;" id="footer">
+    <div class="container">
+      <h3 style="color: white">
+        <ul class="list-inline" style="text-align: center;padding: .2em">
+          <li><a href="https://facebook.com" style="color:#F24259;"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://instagram.com" style="color: #F24259;"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com" style="color: #F24259;"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://linkedin.com" style="color: #F24259;"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://github.com" style="color: #F24259;"><i class="fab fa-github"></i></a></li>
+        </ul>
+      </h3>
+      <div style="text-align: center;display: block;color: white;">
+        © Copyright <strong><a href="about.html" style="text-decoration: none"> Vaibhav & Yashank</a></strong>. All Rights Reserved.
+      </div>
+
+    </div>
+  </div>
+  <!--Back To TOP Car-->
+  <div class="car-top  car-down hidden-xs ">
+    <span><img src="images/car.png" alt=""></span>
+  </div>
+  <style type="text/css">
+    .car-top {
+      width: 85px;
+      position: fixed;
+      bottom: -180px;
+      right: 30px;
+      z-index: 9999;
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    .car-top.show {
+      bottom: 5% !important;
+      -webkit-transition: 1.0s;
+      -moz-transition: 1.0s;
+      transition: 1.0s;
+    }
+
+    .car-top.car-run {
+      bottom: 100% !important;
+      -webkit-transition: 1.0s;
+      -moz-transition: 1.0s;
+      transition: 1.0s;
+    }
+
+    .car-top.car-down {
+      -webkit-transition: 1.0s;
+      -ms-transition: 1.0s;
+      -o-transition: 1.0s;
+      -moz-transition: 1.0s;
+      transition: 1.0s;
+    }
+
+    .car-top:before,
+    .car-top:after {
+      content: "";
+      position: absolute;
+      -o-transition: 0.2s;
+      -webkit-transition: 0.2s;
+      -ms-transition: 0.2s;
+      -moz-transition: 0.2s;
+      transition: 0.2s;
+      opacity: 0;
+    }
+
+    .car-top:hover:before,
+    .car-top:hover:after,
+    .car-top.car-run:before,
+    .car-top.car-run:after {
+      opacity: 1;
+    }
+
+    .car-top:before,
+    .car-top.car-run:before {
+      top: -1px;
+      left: 0px;
+      width: 85px;
+      height: 89px;
+      background: url(images/car-focus.png) no-repeat 0 0;
+    }
+  </style>
+  <script type="text/javascript">
+    var $scrolltop = $('.car-top');
+    $scrolltop.on('click', function () {
+      $('html,body').animate({
+        scrollTop: 0
+      }, 800);
+      $(this).addClass("car-run");
+      setTimeout(function () {
+        $scrolltop.removeClass('car-run');
+      }, 1000);
+      return false;
+    });
+    var $window = $(document);
+    $window.on('scroll', function () {
+      if ($window.scrollTop() >= 200) {
+        $scrolltop.addClass("show");
+        $scrolltop.addClass("car-down");
+      } else {
+        $scrolltop.removeClass("show");
+        setTimeout(function () {
+          $scrolltop.removeClass('car-down');
+        }, 300);
+      }
+    });
+  </script>
+  <!--MODAL SETTINGS-->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      function alignModal() {
+        var modalDialog = $(this).find(".modal-dialog");
+        /* Applying the top margin on modal dialog to align it vertically center */
+        modalDialog.css("margin-top", Math.max(0, ($(window).height() - modalDialog.height()) / 2));
+      }
+      // Align modal when it is displayed
+      $(".modal").on("shown.bs.modal", alignModal);
+      // Align modal when user resize the window
+      $(window).on("resize", function () {
+        $(".modal:visible").each(alignModal);
+      });
+    });
+    var scrollTopPosition = 0;
+    var lastKnownScrollTopPosition = 0;
+
+    //when the document loads
+    $(document).ready(function () {
+
+      //this only runs on the right platform -- this step is not necessary, it should work on all platforms
+      if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+
+        //There is some css below that applies here
+        $('body').addClass('platform-ios');
+
+        //As you scroll, record the scrolltop position in global variable
+        $(window).scroll(function () {
+          scrollTopPosition = $(document).scrollTop();
+        });
+
+        //when the modal displays, set the top of the (now fixed position) body to force it to the stay in the same place
+        $('.modal').on('show.bs.modal', function () {
+
+          //scroll position is position, but top is negative
+          $('body').css('top', (scrollTopPosition * -1));
+
+          //save this number for later
+          lastKnownScrollTopPosition = scrollTopPosition;
+        });
+
+        //on modal hide
+        $('.modal').on('hidden.bs.modal', function () {
+
+          //force scroll the body back down to the right spot (you cannot just use scrollTopPosition, because it gets set to zero when the position of the body is changed by bootstrap
+          $('body').scrollTop(lastKnownScrollTopPosition);
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+body {
+  background: #e31937;
+}
+
+.tesla {
+  width: 526px;
+  height: 699px;
+  margin: 0 auto;
+}
+.tesla .tesla-nicer {
+  width: 516px;
+  height: 281px;
+  margin: 1px 0 0 0;
+  border-radius: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+.tesla .tesla-nicer .tesla-redbullring {
+  width: 689px;
+  height: 299px;
+  border-radius: 100%;
+  border: 29px solid #FFFFFF;
+  background: #FFFFFF;
+  box-shadow: inset 0 0 0 16px #e31937;
+  -webkit-transform: translate(-112px, 110px);
+          transform: translate(-112px, 110px);
+}
+.tesla .tesla-nicer .tesla-redbullring .tesla-notaredbullring {
+  width: 326px;
+  height: 166px;
+  margin: 81px 0 0 181px;
+  border-radius: 69px;
+  background: #e31937;
+  position: absolute;
+}
+.tesla .tesla-devil {
+  margin: 160px 0 0 180px;
+  border-top: 466px solid #FFFFFF;
+  border-left: 78px solid transparent;
+  border-right: 78px solid transparent;
+  position: absolute;
+}
+.tesla .tesla-devil .tesla-evil {
+  margin: -471px 0 0 -50px;
+  border-top: 66px solid #e31937;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  position: absolute;
+}
+
+.tesla-name {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 571px;
+  height: 76px;
+  margin: 0 auto;
+  padding: 0 0 66px 0;
+}
+.tesla-name .engine {
+  height: 16px;
+  border-radius: 0 0 50px 50px;
+  background: #FFFFFF;
+  position: absolute;
+}
+.tesla-name .t {
+  width: 96px;
+  height: 76px;
+  opacity: 0;
+}
+.tesla-name .t .engine {
+  width: 96px;
+}
+.tesla-name .t:before {
+  display: block;
+  width: 16px;
+  height: 76px;
+  margin: 0 0 0 40px;
+  background: #FFFFFF;
+  content: '';
+  position: absolute;
+}
+.tesla-name .e {
+  width: 86px;
+  height: 76px;
+  opacity: 0;
+}
+.tesla-name .e .engine {
+  width: 86px;
+}
+.tesla-name .e .engine:nth-child(2) {
+  margin: 30px 0 0 0;
+}
+.tesla-name .e .engine:nth-child(3) {
+  margin: 60px 0 0 0;
+}
+.tesla-name .s {
+  width: 81px;
+  height: 76px;
+  opacity: 0;
+}
+.tesla-name .s .engine {
+  width: 81px;
+}
+.tesla-name .s .engine:nth-child(2) {
+  margin: 30px 0 0 0;
+}
+.tesla-name .s .engine:nth-child(3) {
+  margin: 60px 0 0 0;
+  border-radius: 50px 50px 0 0;
+}
+.tesla-name .s:before {
+  display: block;
+  width: 16px;
+  height: 46px;
+  content: '';
+  background: #FFFFFF;
+  position: absolute;
+}
+.tesla-name .s:after {
+  display: block;
+  width: 16px;
+  height: 46px;
+  margin: 30px 0 0 65px;
+  content: '';
+  background: #FFFFFF;
+  position: absolute;
+}
+.tesla-name .l {
+  width: 81px;
+  height: 76px;
+  opacity: 0;
+}
+.tesla-name .l .engine {
+  width: 81px;
+  margin: 60px 0 0 0;
+}
+.tesla-name .l:before {
+  display: block;
+  width: 16px;
+  height: 76px;
+  content: '';
+  background: #FFFFFF;
+  position: absolute;
+}
+.tesla-name .a {
+  width: 82px;
+  height: 76px;
+  opacity: 0;
+}
+.tesla-name .a .engine {
+  width: 82px;
+}
+.tesla-name .a .engine:nth-child(1) {
+  margin: 29px 0 0 0;
+}
+.tesla-name .a:before {
+  display: block;
+  width: 16px;
+  height: 45px;
+  margin: 31px 0 0 0;
+  content: '';
+  background: #FFFFFF;
+  position: absolute;
+}
+.tesla-name .a:after {
+  display: block;
+  width: 16px;
+  height: 45px;
+  margin: 31px 0 0 66px;
+  content: '';
+  background: #FFFFFF;
+  position: absolute;
+}
+.tesla-name .t {
+  -webkit-animation: alexander 6.66s ease 0s infinite;
+          animation: alexander 6.66s ease 0s infinite;
+}
+.tesla-name .e {
+  -webkit-animation: alexander 6.66s ease 0.2s infinite;
+          animation: alexander 6.66s ease 0.2s infinite;
+}
+.tesla-name .s {
+  -webkit-animation: alexander 6.66s ease 0.4s infinite;
+          animation: alexander 6.66s ease 0.4s infinite;
+}
+.tesla-name .l {
+  -webkit-animation: alexander 6.66s ease 0.6s infinite;
+          animation: alexander 6.66s ease 0.6s infinite;
+}
+.tesla-name .a {
+  -webkit-animation: alexander 6.66s ease 0.8s infinite;
+          animation: alexander 6.66s ease 0.8s infinite;
+}
+
+@-webkit-keyframes alexander {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-16px, 0);
+            transform: translate(-16px, 0);
+  }
+  66% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes alexander {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-16px, 0);
+            transform: translate(-16px, 0);
+  }
+  66% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}

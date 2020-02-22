@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TESLA | HOME</title>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="icon" type="image/png" href="logo/logo.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/teslahome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script  src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+ <script type="text/javascript" src="js/wow.js"></script>
+    <style type="text/css">
+    	#footer{background-color: #343b40;transition: all 0.5s ease-in-out}
+    </style>
+</head>
+<body style="font-family: 'Montserrat', sans-serif;font-weight: 900!important">
+	<!--Dark Mode-->
+     
+     <script type="text/javascript">
+     	$(document).ready(function(){
+     	$("#mode").click(function(){
+     		$("body").toggleClass("dark")
+     	});
+     });
+     </script>
+     <style type="text/css">
+     .dark {background-color:black!important; transition: all 0.5s ease-in-out}
+     .dark h1{color: white;transition: all 0.5s ease-in-out}
+     .dark input{color: black;transition: all 0.5s ease-in-out}
+     .dark #contact{background-color:black; color:white;transition: all 0.5s ease-in-out }
+     .dark #nav{background-color:black;transition: all 0.5s ease-in-out }
+     .dark #footer{background-color: black;transition: all 0.5s ease-in-out}
+     .dark #mo{background-color: black;color: white;transition: all 0.5s ease-in-out}
+     .dark #mo input{color: black;transition: all 0.5s ease-in-out}
+     .dark #closee{color: white;transition: all 0.5s ease-in-out}
+     .dark #closee:hover{color:#FF1800;}
+    
+     .dark h4{background-color: black;color: white;transform: all 0.5s ease-in-out}
+     </style>
+     <script type="text/javascript">
+    new WOW().init();
+  </script>
+ <!--Cross Animation-->
+   <style type="text/css">
+           .bar1, .bar2, .bar3 {transition: 0.3s;}
+         	.change .bar1 {
+           -webkit-transform: rotate(-45deg) translate(-7px, 6px) ;
+          transform: rotate(-45deg) translate(-7px, 0px) ;
+          }
+          .change .bar2 {
+          opacity: 0;
+          }
+          .change .bar3 {
+          -webkit-transform: rotate(45deg) translate(-7px, -8px) ;
+          transform: rotate(45deg) translate(-8px, -2px) ;
+         } 
+     </style>
+     <script type="text/javascript">
+     	function myFunction(x) {
+        x.classList.toggle("change");
+      }
+     </script>
+    <!-- Search Modal -->
+<div id="modalSearch" class="modal fade" role="dialog">
+   <div class="modal-dialog" >
+
+       <!-- Modal content-->
+       <div class="modal-content" id="mo" >
+           <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" id="closee"><span class="glyphicon glyphicon-remove"></span></button>
+               <h4 class="modal-title">Search VRoom</h4>
+           </div>
+           <div class="modal-body">
+  		    <script>
+  				(function() {
+   					 var cx = '011178486855581426958:ri5d8bbsa-k';
+  				 	 var gcse = document.createElement('script');
+    				 gcse.type = 'text/javascript';
+   					 gcse.async = true;
+   					 gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+ 				     var s = document.getElementsByTagName('script')[0];
+ 				     s.parentNode.insertBefore(gcse, s);
+  					})();
+            </script>
+
+               <gcse:search></gcse:search>
+
+           </div>
+           <div class="modal-footer">
+               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+           </div>
+       </div>
+
+   </div>
+</div>
+<style type="text/css">
+    .reset-box-sizing, .reset-box-sizing *, .reset-box-sizing *:before, .reset-box-sizing *:after,  .gsc-inline-block
+    {
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+    input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gsc-search-button
+    {
+        box-sizing: content-box;
+        line-height: normal;
+    }
+    .modal .modal-dialog
+    {
+      width: 800px;
+      max-width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#gsearch").click(function(){
+			var q=$("#query").val();
+			$("#gsc-i-id1").val(q);
+			$(".gsc-search-button").click();
+			$("#query").val("");
+		})
+	})
+</script>
+   <!--Navbar Section-->
+   
+
+   <nav class="navbar navbar-inverse navbar-fixed-top" id="nav">
+     <div class="container-fluid">
+      <div class="navbar-header">
+        <div class="navbar-toggle" style="border:none!important; background-color: inherit;" data-toggle="collapse" data-target="#myNavbar" onclick="myFunction(this)">
+          <span class="icon-bar bar1"></span>
+          <span class="icon-bar bar2"></span>
+          <span class="icon-bar bar3"></span>                        
+        </div>
+        <a class="navbar-brand" href="#">VRoom</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li ><a href="index.html">Home</a></li>
+          <li><a href="supercars.html">Supercars</a></li>
+          <li><a href="news.html">News</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">More <span class="caret"></span></a>
+            <ul class="dropdown-menu" id="dw">
+              <li><a href="com.html">Bloggers</a></li>
+              <li><a href="vlog.html">Vloggers</a></li>
+              <li class="disabled"><a href="#">Newsletter</a></li>
+            </ul>
+          </li> 
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="signup.html"><span class="fa fa-user"></span> Sign Up</a></li>
+          <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li class=" hidden-xs"><label class="switch"><center><input type="checkbox" id="mode"><span class="slider round"></span></center></label></li>
+        </ul>
+        <form class="navbar-form navbar-right" action="#" >
+          <div class="input-group search-box">
+            <input type="search" q="googlesearch" class=" search-txt" placeholder="Search" id="query" >
+            <div class="input-group-btn">
+              <a class="search-btn"  data-toggle="modal" data-target="#modalSearch" id="gsearch">
+                <i class="glyphicon glyphicon-search"></i>
+             </a>
+            </div>
+         </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <style type="text/css">
+  	.search-box {
+ background: #2f3640;
+ height: 10px;
+ border-radius: 40px;
+ padding: 2px;
+}
+
+.search-box:hover .search-txt {
+ width: 240px;
+ padding: 0 3px;
+}
+
+.search-box:hover  .search-btn {
+ background: white;
+ color: red;
+ text-decoration: none;
+}
+
+.search-btn {
+ color: #e84118;
+ float: right;
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+ background: #2f3640;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: 0.4s;
+ color: white;
+ cursor: pointer;
+}
+
+.search-btn  i {
+ font-size: 20px;
+}
+
+.search-txt {
+ border: none;
+ background: none;
+ outline: none;
+ float: left;
+ padding-left: 2px;
+ color: white;
+ font-size: 12px;
+ transition: 0.4s;
+ line-height: 30px;
+ width: 0px;
+ font-weight: bold;
+}﻿
+  </style>
+  <style>
+.switch {
+
+  position: relative;
+  top: 32%; 
+  display: inline-block;
+  width: 50px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  top: 0%;
+}
+
+input:checked + .slider {
+  background-color: #636565  ;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px black;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
+
+
+
+<br>
+<img src="images/big.jpg" class="img immg-responsive" style="width: 100%">
+<br><br><br><br>
+<div class="conatiner">
+	<div class="col-sm-3">
+		
+	</div>
+	<div class="col-sm-6">
+		<br>
+		<br>
+		<center>
+			<h3>
+				TOTAL  CO<sub>2</sub>  SAVED  BY  TESLA  VEHICLES
+			</h3>
+			<h1><span class="shivaa">4086212.18 </span>tons</h1>
+		</center>
+	</div>
+	
+	<div class="col-sm-3">
+		
+	</div>
+</div>
+<center><img src="images/USA.png" class="img immg-responsive" style="width: 50%"></center>
+<br>
+<br>
+<div class="container">
+	<div class="col-md-3">
+		
+	</div>
+	<div class="col-md-6">
+		<br>
+		<br>
+		<table class="table">
+			<tr>
+				<td><center>City</center></td><td><center>CO<sub>2</sub> Saved By Owners</center></td>
+				<td><center>CO<sub>2</sub> Saved Per Capita</center></td>
+			</tr>
+			<tr>
+				<td><center>1 Los Angeles,CA</center></td>
+				<td><center>168,444,075 lbs</center></td>
+				<td><center>42.41 lbs</center></td>
+			</tr>
+			<tr>
+				<td><center>2 San Jose, CA</center></td>
+				<td><center>105,947,928 lbs</center></td>
+				<td><center>103.17 lbs</center></td>
+			</tr>
+			<tr>
+				<td><center>3 San Francisco, CA</center></td>
+				<td><center>83,142,235 lbs</center></td>
+				<td><center>96.14 lbs</center></td>
+			</tr>
+			<tr>
+				<td><center>4 Dallas, TX</center></td>
+				<td><center>52,050,283 lbs</center></td>
+				<td><center>40.04 lbs</center></td>
+			</tr>
+			<tr>
+				<td><center>5 Las Vegas, NV</center></td>
+				<td><center>46,767,168 lbs</center></td>
+				<td><center>74.98 lbs</center></td>
+			</tr>
+		</table>
+	</div>
+	
+	<div class="col-md-3">
+		
+	</div>
+</div>
+<div class="container">
+  <div class="row">
+    <!--Left Side -->
+    <div class="col-lg-5 showcase-left">
+      <div>
+        <br><br>
+        <h3>Safety</h3>
+        <h1>Built For Safety</h1>
+      <p>
+Safety is the most important part of the overall Model 3 design. The metal structure is a combination of aluminum and steel, for maximum strength in every area. In a roof-crush test, Model 3 resisted four times its own mass, even with an all-glass roof: that's the same weight as two full-grown African elephants</p>
+      </div>
+      
+    </div>
+    <!-- Right side-->
+    <div class="col-lg-7 showcase-right">
+      <div>
+          <img src="images/tesla_safety.png" class="img-responsive" style="float: right;">
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- All wheel div-->
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-1 showcase-left"></div>
+    <div class="col-lg-7 showcase-left">
+      <img src="images/model3allwheel.jpg" class="img-responsive" style="height: 70%;width: 70%;">
+      
+    </div>
+    <div class="col-lg-4 showcase-right">
+      <h3>All Wheel Drive</h3>
+      <h1>Dual Motor</h1>
+      <p>Tesla All-Wheel Drive has two independent motors. Unlike traditional all-wheel drive systems, these two motors digitally control torque to the front and rear wheels—for far better handling and traction control. Your car can drive on either motor, so you never need to worry about getting stuck on the road. If one motor stops working, you can safely continue to your destination with the second.</p>
+    </div>
+  </div>
+</div>
+<!--Auto Pilot -->
+
+<div class="container">
+  <div class="row">
+    <!--Left Side -->
+    
+    <div class="col-lg-1 showcase-left"></div>
+    <div class="col-lg-4 showcase-left">
+      <div >
+        <br><br>
+        <h3>Autopilot</h3>
+        <h1>Future Of Driving</h1>
+      <p>
+Autopilot advanced safety and convenience features are designed to assist you with the most burdensome parts of driving. All new Tesla cars come standard with driver assistance features such as emergency braking, collision warning and blind-spot monitoring.</p>
+      </div>
+      
+    </div>
+    <!-- Right side-->
+    <div class="col-lg-7 showcase-right">
+      <div>
+          <img src="images/tesla_autopilot.png" class="img-responsive" style="float: right;">
+      </div>
+    </div>
+  </div>
+</div>
+<!--Interior -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 showcase-left">
+      <img src="images/model3_interior.jpg" class="img-responsive" style="height: 70%;width: 70%;">
+      
+    </div>
+    <div class="col-lg-4 showcase-right">
+      <h3>Interior</h3>
+      <h1>Built Around Driver</h1>
+      <p>The inside of Model 3 is unlike any other car. You can use your smartphone as a key, and access all driver controls in the central 15-inch touchscreen. The all-glass roof extends from front to back, creating a sense of openness from every seat..</p>
+    </div>
+  </div>
+</div>
+<!--Customized-->
+<br>
+<br>
+<center><a href="customize.html"><button class="button1">Customize</button></a></center>
+
+
+<script type="text/javascript">
+    if($(window).width() <= 768) {
+        $('.showcase-left,.showcase-right').addClass('top');
+        $('.top').removeClass('.showcase-left,showcase-right');
+    }
+</script>
+<!--CONTENT LATENTCY SCRIPT-->
+ <script>
+    window.sr = ScrollReveal();
+    //below is for +image slide up
+    sr.reveal('#imageslideup', {
+      duration:1500,
+      origin:'bottom',
+     distance: '300px'
+    });
+
+    sr.reveal('.myharsh', {
+      duration:1000,
+      origin:'top',
+     distance: '300px'
+    });
+    sr.reveal('.showcase-left', {
+      duration:2000,
+      origin:'left',
+      distance:'20%'
+    });
+    sr.reveal('.showcase-right', {
+      duration:2000,
+      origin:'right',
+      distance:'20%'
+    });
+    sr.reveal('.showcase-btn', {
+      duration:2000,
+      delay:1000,
+      origin:'bottom'
+    });
+    sr.reveal('#testimonial div', {
+      duration:2000,
+      origin:'bottom'
+    });
+    sr.reveal('.top', {
+      duration:2000,
+      origin:'left',
+      distance:'300px',
+      viewFactor:0.2
+    });
+    sr.reveal('.bottom', {
+      duration:2000,
+      origin:'right',
+      distance:'300px',
+      viewFactor:0.2
+    });
+  </script>
+
+
+<br><br>
+<!--cars-->
+<div class="columns wow fadeIn">
+  <ul class="price">
+    <li class="header">Model 3</li>
+    <li class="grey">$35,000-$55,000</li>
+    <li>350 Mile Battery</li>
+    <li>18" Tyres</li>
+    <li>Auto Pilot</li>
+    
+    <li><button class="button1" data-toggle="modal" data-target="#my"><span>Book Now </span></button></li>
+  </ul>
+</div>
+
+<div class="columns wow fadeIn">
+  <ul class="price">
+    <li class="header" style="background-color:#4CAF50">Model X</li>
+    <li class="grey">$45,000-$65,000</li>
+    <li>340 Miles Battery</li>
+    <li>17" Tyres</li>
+    <li>Top class Luxory Feature</li>
+    
+    <li><button class="button1" data-toggle="modal" data-target="#my2"><span>Book Now </span></button></li>
+  </ul>
+</div>
+
+<div class="columns wow fadeIn">
+  <ul class="price">
+    <li class="header">Roadster</li>
+    <li class="grey">$60,000-$70,000</li>
+    <li>300 Miles Battery</li>
+    <li>20" Tyres</li>
+    <li>Xuv</li>
+    
+    <li><button class="button1" data-toggle="modal" data-target="#my3"><span>Book Now </span></button></li>
+  </ul>
+</div>
+
+<!-- Modals -->
+<div id="my" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times</button>
+          <h4 class="modal-title"><b>BOOKING</b></h4>
+          
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal " style="margin-left: 2.5%;margin-right: 2.5%">
+        <div class="form-group">
+          
+          <div class="col-sm-6">
+          <input type="text" id="name" class="form-control" placeholder="Name">
+            </div>
+            <div class="col-sm-6">
+          <input type="email" id="email" class="form-control" placeholder="Email" >
+            </div>
+    
+        </div>
+        <div class="form-group">
+          
+          <div class="col-sm-12">
+          <input type="text" id="subject" class="form-control" placeholder="Model 3" disabled>
+            </div>
+            
+        </div>
+        <div class="form-group">
+          
+          <div class="col-sm-12"><textarea placeholder="Adress" rows="4" class="form-control"></textarea></div>
+          
+        </div>
+        <div class="form-group">
+          <div class="col-md-12 text-center">
+                      <button type="submit"  class="form btn btn-default">Book</button>
+                    </div>
+        </div>
+      </form>
+          </div>
+
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+
+
+<div id="my2" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times</button>
+          <h4 class="modal-title"><b>BOOKING</b></h4>
+          
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal " style="margin-left: 2.5%;margin-right: 2.5%">
+        <div class="form-group">
+          
+          <div class="col-sm-6">
+          <input type="text" id="name" class="form-control" placeholder="Name">
+            </div>
+            <div class="col-sm-6">
+          <input type="email" id="email" class="form-control" placeholder="Email" >
+            </div>
+    
+        </div>
+        <div class="form-group">
+          
+          <div class="col-sm-12">
+          <input type="text" id="subject" class="form-control" placeholder="Model X" disabled>
+            </div>
+            
+        </div>
+        <div class="form-group">
+          
+          <div class="col-sm-12"><textarea placeholder="Adress" rows="4" class="form-control"></textarea></div>
+          
+        </div>
+        <div class="form-group">
+          <div class="col-md-12 text-center">
+                      <button type="submit"  class="form btn btn-default">Book</button>
+                    </div>
+        </div>
+      </form>
+          </div>
+
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+
+
+<div id="my3" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times</button>
+          <h4 class="modal-title"><b>BOOKING</b></h4>
+          
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal " style="margin-left: 2.5%;margin-right: 2.5%">
+        <div class="form-group">
+          
+          <div class="col-sm-6">
+          <input type="text" id="name" class="form-control" placeholder="Name">
+            </div>
+            <div class="col-sm-6">
+          <input type="email" id="email" class="form-control" placeholder="Email" >
+            </div>
+    
+        </div>
+        <div class="form-group">
+          
+          <div class="col-sm-12">
+          <input type="text" id="subject" class="form-control" placeholder="Roadster" disabled>
+            </div>
+            
+        </div>
+        <div class="form-group">
+          
+          <div class="col-sm-12"><textarea placeholder="Adress" rows="4" class="form-control"></textarea></div>
+          
+        </div>
+        <div class="form-group">
+          <div class="col-md-12 text-center">
+                      <button type="submit"  class="form btn btn-default">Book</button>
+                    </div>
+        </div>
+      </form>
+          </div>
+
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+<script type="text/javascript"></script>
+
+
+<br><br><br><br>
+<br>
+<!--Cards-->
+
+<div class="roww">
+  <div class="yas">
+    <div class="card">
+      <p><i class="fa fa-user"></i></p>
+      <h3><span class="shiva">100</span> K+ </h3>
+      <p>Customers</p>
+    </div>
+  </div>
+
+  <div class="yas">
+    <div class="card">
+      <p><i class="fa fa-cogs"></i></p>
+      <h3><span class="shiva">500</span>+</h3>
+      <p>Service Centers</p>
+    </div>
+  </div>
+  
+  <div class="yas">
+    <div class="card">
+      <p><i class="fa fa-smile-o"></i></p>
+      <h3><span class="shiva">2000</span>+</h3>
+      <p>Happy Workers</p>
+    </div>
+  </div>
+  
+  <div class="yas">
+    <div class="card">
+      <p><i class="fa fa-graduation-cap"></i></p>
+      <h3>Awarded as</h3>
+      <p>Best Electric Car Company</p>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- Style for above-->
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.yas {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.roww {margin: 0px;}
+
+/* Clear floats after the columns */
+.roww:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .yas {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  text-align: center;
+  background-color: #444;
+  color: white;
+  height: 200px;
+}
+
+.fa {font-size:50px;}
+</style>
+<script>$('.shiva').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});</script>
+<script>$('.shivaa').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 50000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});</script>
+<!-- end of cards-->
+<!--Back To TOP Car-->
+  <div class="car-top  car-down hidden-xs ">
+    <span><img src="images/car.png" alt="" /></span>
+  </div>
+  <style type="text/css">
+    .car-top {
+      width: 85px;
+      position: fixed;
+      bottom: -180px;
+      right: 30px;
+      z-index: 9999;
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    .car-top.show {
+      bottom: 5% !important;
+      -webkit-transition: 1s;
+      -moz-transition: 1s;
+      transition: 1s;
+    }
+
+    .car-top.car-run {
+      bottom: 100% !important;
+      -webkit-transition: 1s;
+      -moz-transition: 1s;
+      transition: 1s;
+    }
+
+    .car-top.car-down {
+      -webkit-transition: 1s;
+      -ms-transition: 1s;
+      -o-transition: 1s;
+      -moz-transition: 1s;
+      transition: 1s;
+    }
+
+    .car-top:before,
+    .car-top:after {
+      content: "";
+      position: absolute;
+      -o-transition: 0.2s;
+      -webkit-transition: 0.2s;
+      -ms-transition: 0.2s;
+      -moz-transition: 0.2s;
+      transition: 0.2s;
+      opacity: 0;
+    }
+
+    .car-top:hover:before,
+    .car-top:hover:after,
+    .car-top.car-run:before,
+    .car-top.car-run:after {
+      opacity: 1;
+    }
+
+    .car-top:before,
+    .car-top.car-run:before {
+      top: -1px;
+      left: 0px;
+      width: 85px;
+      height: 89px;
+      background: url(images/car-focus.png) no-repeat 0 0;
+    }
+  </style>
+  <script type="text/javascript">
+    var $scrolltop = $(".car-top");
+    $scrolltop.on("click", function () {
+      $("html,body").animate({
+          scrollTop: 0
+        },
+        800
+      );
+      $(this).addClass("car-run");
+      setTimeout(function () {
+        $scrolltop.removeClass("car-run");
+      }, 1000);
+      return false;
+    });
+    var $window = $(document);
+    $window.on("scroll", function () {
+      if ($window.scrollTop() >= 200) {
+        $scrolltop.addClass("show");
+        $scrolltop.addClass("car-down");
+      } else {
+        $scrolltop.removeClass("show");
+        setTimeout(function () {
+          $scrolltop.removeClass("car-down");
+        }, 300);
+      }
+    });
+  </script>
+
+
+<!--Footer Section-->
+<div class="container-fluid" style="padding: 3.2rem;" id="footer">
+	<div class="container">
+		<h3 style="color: white"><ul class="list-inline" style="text-align: center;padding: .2em">
+			<li><a href="https://facebook.com" style="color:#F24259;"><i class="fab fa-facebook"></i></a></li>
+			<li><a href="https://instagram.com" style="color: #F24259;"><i class="fab fa-instagram"></i></a></li>
+			<li><a href="https://twitter.com" style="color: #F24259;"><i class="fab fa-twitter"></i></a></li>
+			<li><a href="https://linkedin.com" style="color: #F24259;"><i class="fab fa-linkedin-in"></i></a></li>
+			<li><a href="https://github.com" style="color: #F24259;"><i class="fab fa-github"></i></a></li>
+		</ul></h3>
+		<div style="text-align: center;display: block;color: white;">
+        © Copyright <strong> Vaibhav & Yashank</strong>. All Rights Reserved.
+      </div>
+
+	</div>
+	
+</div>
+
+</body>
+</html>

@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Customizaton</title>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="icon" type="image/png" href="logo/logo.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script  src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body style="font-family: 'Montserrat', sans-serif;font-weight: 900!important">
+
+	<style type="text/css">
+	.button1 {
+  border-radius: 4px;
+  background-color: #343b40;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-right: 25px;
+
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+
+
+
+
+
+       <style type="text/css">
+
+		body{background-color: #F7F7F7;transition: all 0.5s ease-in-out}
+		
+		#footer{background-color: #343b40;transition: all 0.5s ease-in-out}
+	</style>
+ <!--Dark Mode-->
+     
+     <script type="text/javascript">
+     	$(document).ready(function(){
+     	$("#mode").click(function(){
+     		$("body").toggleClass("dark")
+     	});
+     });
+     </script>
+     <style type="text/css">
+     .dark {background-color:black!important; transition: all 0.5s ease-in-out}
+     .dark h1{color: white;transition: all 0.5s ease-in-out}
+     .dark input{color: black;transition: all 0.5s ease-in-out}
+     .dark #contact{background-color:black; color:white;transition: all 0.5s ease-in-out }
+     .dark #nav{background-color:black;transition: all 0.5s ease-in-out }
+     .dark #footer{background-color: black;transition: all 0.5s ease-in-out}
+     .dark #mo{background-color: black;color: white;transition: all 0.5s ease-in-out}
+     .dark #mo input{color: black;transition: all 0.5s ease-in-out}
+     .dark #closee{color: white;transition: all 0.5s ease-in-out}
+     .dark #closee:hover{color:#FF1800;}
+     
+     </style>
+
+     <!--Cross Animation-->
+   <style type="text/css">
+           .bar1, .bar2, .bar3 {transition: 0.3s;}
+         	.change .bar1 {
+           -webkit-transform: rotate(-45deg) translate(-7px, 6px) ;
+          transform: rotate(-45deg) translate(-7px, 0px) ;
+          }
+          .change .bar2 {
+          opacity: 0;
+          }
+          .change .bar3 {
+          -webkit-transform: rotate(45deg) translate(-7px, -8px) ;
+          transform: rotate(45deg) translate(-8px, -2px) ;
+         } 
+     </style>
+     <script type="text/javascript">
+     	function myFunction(x) {
+        x.classList.toggle("change");
+      }
+     </script>
+    <!-- Search Modal -->
+<div id="modalSearch" class="modal fade" role="dialog">
+   <div class="modal-dialog" >
+
+       <!-- Modal content-->
+       <div class="modal-content" id="mo" >
+           <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" id="closee"><span class="glyphicon glyphicon-remove"></span></button>
+               <h4 class="modal-title">Search VRoom</h4>
+           </div>
+           <div class="modal-body">
+  		    <script>
+  				(function() {
+   					 var cx = '011178486855581426958:ri5d8bbsa-k';
+  				 	 var gcse = document.createElement('script');
+    				 gcse.type = 'text/javascript';
+   					 gcse.async = true;
+   					 gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+ 				     var s = document.getElementsByTagName('script')[0];
+ 				     s.parentNode.insertBefore(gcse, s);
+  					})();
+            </script>
+
+               <gcse:search></gcse:search>
+
+           </div>
+           <div class="modal-footer">
+               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+           </div>
+       </div>
+
+   </div>
+</div>
+<style type="text/css">
+    .reset-box-sizing, .reset-box-sizing *, .reset-box-sizing *:before, .reset-box-sizing *:after,  .gsc-inline-block
+    {
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+    input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gsc-search-button
+    {
+        box-sizing: content-box;
+        line-height: normal;
+    }
+    .modal .modal-dialog
+    {
+      width: 800px;
+      max-width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#gsearch").click(function(){
+			var q=$("#query").val();
+			$("#gsc-i-id1").val(q);
+			$(".gsc-search-button").click();
+			$("#query").val("");
+		})
+	})
+</script>
+   <!--Navbar Section-->
+   
+
+   <nav class="navbar navbar-inverse navbar-fixed-top" id="nav">
+     <div class="container-fluid">
+      <div class="navbar-header">
+        <div class="navbar-toggle" style="border:none!important; background-color: inherit;" data-toggle="collapse" data-target="#myNavbar" onclick="myFunction(this)">
+          <span class="icon-bar bar1"></span>
+          <span class="icon-bar bar2"></span>
+          <span class="icon-bar bar3"></span>                        
+        </div>
+        <a class="navbar-brand" href="#">VRoom</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li ><a href="index.html">Home</a></li>
+          <li><a href="supercars.html">Supercars</a></li>
+          <li><a href="news.html">News</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">More <span class="caret"></span></a>
+            <ul class="dropdown-menu" id="dw">
+              <li><a href="com.html">Bloggers</a></li>
+              <li><a href="vlog.html">Vloggers</a></li>
+              <li class="disabled"><a href="#">Newsletter</a></li>
+            </ul>
+          </li> 
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="signup.html"><span class="fa fa-user"></span> Sign Up</a></li>
+          <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li class=" hidden-xs"><label class="switch"><center><input type="checkbox" id="mode"><span class="slider round"></span></center></label></li>
+        </ul>
+        <form class="navbar-form navbar-right" action="#" >
+          <div class="input-group search-box">
+            <input type="search" q="googlesearch" class=" search-txt" placeholder="Search" id="query" >
+            <div class="input-group-btn">
+              <a class="search-btn"  data-toggle="modal" data-target="#modalSearch" id="gsearch">
+                <i class="glyphicon glyphicon-search"></i>
+             </a>
+            </div>
+         </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <style type="text/css">
+  	.search-box {
+ background: #2f3640;
+ height: 10px;
+ border-radius: 40px;
+ padding: 2px;
+}
+
+.search-box:hover .search-txt {
+ width: 240px;
+ padding: 0 3px;
+}
+
+.search-box:hover  .search-btn {
+ background: white;
+ color: red;
+ text-decoration: none;
+}
+
+.search-btn {
+ color: #e84118;
+ float: right;
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+ background: #2f3640;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: 0.4s;
+ color: white;
+ cursor: pointer;
+}
+
+.search-btn  i {
+ font-size: 20px;
+}
+
+.search-txt {
+ border: none;
+ background: none;
+ outline: none;
+ float: left;
+ padding-left: 2px;
+ color: white;
+ font-size: 12px;
+ transition: 0.4s;
+ line-height: 30px;
+ width: 0px;
+ font-weight: bold;
+}﻿
+  </style>
+  <style>
+.switch {
+
+  position: relative;
+  top: 32%; 
+  display: inline-block;
+  width: 50px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  top: 0%;
+}
+
+input:checked + .slider {
+  background-color: #636565  ;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px black;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
+
+
+
+
+
+
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: white;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 0px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #73AD21;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 0px;
+  height: 100%;
+}
+
+#Home {background-color: white;}
+#News {background-color: white;}
+#Contact {background-color: white;}
+#About {background-color: white;}
+</style>
+<br><br>
+
+<button class="tablink" onclick="openPage('Home', this, '#73AD21')" id="defaultOpen">1.Car</button>
+<button class="tablink" onclick="openPage('News', this, '#73AD21')" >2.Exterior</button>
+<button class="tablink" onclick="openPage('Contact', this, '#73AD21')">3.Interior</button>
+<button class="tablink" onclick="openPage('About', this, '#73AD21')">4.Payment</button>
+
+<style>
+.rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 12px;   
+}
+.rcorners{
+	border-radius: 25px;
+	padding: 12px;
+	border: 2px solid gray;
+}
+.rcorners3{
+	border-radius: 700px;
+	padding:5px;
+	background-color: black;
+	border:2px solid gray;
+	cursor: pointer;
+}
+</style>
+
+
+
+<!-- CAR SECTION-->
+<div id="Home" class="tabcontent" >
+
+<div class="row" >
+	<div class="col-md-8">
+		<img src="images/standard.png" style="width: 80%" id="y">
+	</div>
+	<div class="col-md-4">
+		<h4>Select Your Car</h4>
+			<p><b>Rear Wheel Drive</b></p>
+			<p data-toggle="tooltip" data-placement="left" title="Basic Premium Stuff Included" style="opacity: 0.7"><u>Partial Premium Interior</u></p>
+			<center><p class="rcorners2" id="m" ><span><b>Standard Range Plus </b></span>&nbsp;<span style="opacity: 0.6">  $31,450*</span></p></center>
+			<p><b>Dual Motor All Wheel</b></p>
+			<p data-toggle="tooltip" data-placement="left" title="All Premium Stuff Included" style="opacity: 0.7"><u>Premium Interior</u></p><br>
+			<center><p class="rcorners" id="mm"><span><b>Long Range </b></span>&nbsp;<span style="opacity: 0.6">  $41,450*</span></p></center>
+			<center><p class="rcorners" id="mmm"><span><b>Performance </b></span>&nbsp;<span style="opacity: 0.6">  $51,450*</span></p></center>
+			<p style="opacity: 0.7" id="magic">Prices above include potential incentives <br>and gas savings.</p>
+		
+	</div>
+	
+</div>
+
+</div>
+
+
+
+<!--Exterior-->
+<div id="News" class="tabcontent">
+<div class="row">
+<div class="col-md-8">
+	<img src="images/black_car.png" id="p" style="width:80%" class="image image-responsive">
+</div>
+<div class="col-md-4">
+	<h3 style="back">Select Your color</h3><br>
+				<center><span class="rcorners3" id="n" style="border:2px solid green">Blq</span>
+				<span class="rcorners3" id="nn" style="background-color: gray;color: gray">gqr</span>
+				<span class="rcorners3" id="nnn" style="background-color: red;color: red">gqr</span>
+				<span class="rcorners3" id="nnnn" style="background-color: blue;color: blue">grq</span>
+				<span class="rcorners3" id="nnnnn" style="background-color: white;color: white">grq</span></center>
+				
+				<br><p ><span id="magic2"><b>Solid black </b></span> <span id="magic3" style="opacity: 0.7;float: right;"> Included</span></p>
+				<hr>
+				<h3>Select Your Wheel</h3>
+				<p data-toggle="tooltip" data-placement="left" title="For Highways and normal days" style="opacity: 0.7"><u>18" Aero</u></p>
+				<center><p class="rcorners2" id="w" ><span><b>Aero Wheels </b></span>&nbsp;<span style="opacity: 0.6">  18"</span></p></center>
+				<p data-toggle="tooltip" data-placement="left" title="For Off-roading" style="opacity: 0.7"><u>19" Sports</u></p>
+				<center><p class="rcorners" id="ww" ><span><b>Sports Wheels </b></span>&nbsp;<span style="opacity: 0.6">  19"</span></p></center>
+</div>
+</div>
+</div>
+	
+<!--Interior-->
+<div id="Contact" class="tabcontent">
+	<div class="row">
+		<div class="col-md-8">
+			<img id="ui" src="images/interior_black.png" class="img img-responsive" style="width: 80%">
+		</div>
+		<div class="col-md-4">
+			<center><h1>Select Interior</h1>
+			<br>
+			<span class="rcorners3" id="ioio" style="background-color: black;color: black;border:2px solid green" >grq</span>
+			<span class="rcorners3" id="ioioio" style="background-color: white;color: white">grq</span></center>
+			<br><p ><span><b>Solid black </b></span> <span id="magic9" style="opacity: 0.7;float: right;"> Included</span></p>
+			<hr>
+			<center><span><b>Includes:</b></span></center>
+			<ul>
+				<li>12-way power adjustable heated front seats</li>
+				<li>Premium seat material and trim</li>
+				<li>Upgraded audio -immersive sound</li>
+				<li>Standard maps & navigation</li>
+				<li>LED fog lamps</li>
+				<li>Tinted glass roof with ultraviolet and infraared protection</li>
+				<li>Auto dimming,power folding,heated side mirrors</li>
+				<li>Music and media over Bluetooth*</li>
+				<li>Custom driver profiles</li>
+				<li>Center console with storage,4 USB ports and docking for 2 smartphones</li>
+			</ul>
+
+		</div>
+		</div>
+  
+</div>
+
+
+
+<!--Payement-->
+<div id="About" class="tabcontent">
+	<div class="row">
+		<div class="col-md-3">
+			
+		</div>
+		<div class="col-md-6">
+			<center><h1>Your Car Specifications</h1>
+				<br>
+				<br>
+				<span><b>Your Car Model:</b></span></center>
+				<br><br>
+				<span id="carr" style="background-color: #DCDCDC">Standard Range Plus</span><span style="float: right;" id="pricee">$31,450</span>
+				<br>
+				<br>
+				<center>
+				<span><b>Exterior You choosed :</b></span></center>
+				<br>
+				<br>
+				
+				<span id="exte" style="background-color: #DCDCDC">Balck</span> <span style="float: right;" id="colo">prices Added</span>
+				<br>
+				<br>
+				
+				<center>
+					<span><b>Interior You choosed :</b></span>
+				</center>
+				<br>
+				<br>
+				
+				<span id="inte" style="background-color: #DCDCDC">Balck</span> <span style="float: right;" id="collo">prices Added</span>
+				<br>
+		<br>
+		<br>
+		<br>
+		<center><button class="button1" data-toggle="modal" data-target="#my"><span>Book Now </span></button></center>
+
+
+
+		<!-- Modal -->
+
+
+		<div id="my" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times</button>
+          <h4 class="modal-title"><b>BOOKING</b></h4>
+          
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal " style="margin-left: 2.5%;margin-right: 2.5%">
+        <div class="form-group">
+          
+          <div class="col-sm-6">
+          <input type="text" id="name" class="form-control" placeholder="Name">
+            </div>
+            <div class="col-sm-6">
+          <input type="email" id="email" class="form-control" placeholder="Email" >
+            </div>
+    
+        </div>
+        <div class="form-group">
+          
+          <div class="col-sm-12">
+          <input type="text" id="subject" class="form-control" placeholder="India" disabled>
+            </div>
+            
+        </div>
+        <div class="form-group">
+          
+          <div class="col-sm-12"><textarea placeholder="Adress" rows="4" class="form-control"></textarea></div>
+          
+        </div>
+        <div class="form-group">
+          <div class="col-md-12 text-center">
+                      <button type="submit"  class="form btn btn-default">Book</button>
+                    </div>
+        </div>
+      </form>
+          </div>
+
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+		</div>
+		
+		<div class="col-md-3">
+			
+		</div>
+		
+	</div>
+</div>
+
+
+
+<!-- Script for switching tabs -->
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+<!-- Functiong script of car section-->
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
+<script type="text/javascript">
+	$("#m").click(function(){
+		$("#m").css("border","2px solid  #73AD21");
+		$("#mm").css("border","2px solid gray");
+		$("#mmm").css("border","2px solid gray");
+		$("#magic").html("<center>Prices above include potential incentives <br>and gas savings.</center>");
+		$("#carr").html("<b>Standard Range Plus (The Basic Car with basic Features):</b>");
+		$("#pricee").html("<b>$31,450</b>");
+
+		
+
+	});
+	$("#mm").click(function(){
+		$("#mm").css("border","2px solid  #73AD21");
+		$("#m").css("border","2px solid gray");
+		$("#mmm").css("border","2px solid gray");
+		$("#magic").html("<center>Tesla All-Wheel Drive has two independent <br> motors that digitally control torque to the front<br> and rear wheels—for far better handling and <br>traction control. </center>");
+		$("#y").attr("src","images/longrange.png");
+		$("#carr").html("<b>Long Range (two independent motors that digitally control torque)</b>");
+		$("#pricee").html("<b>$41,450</b>");
+	});
+	$("#mmm").click(function(){
+		$("#mmm").css("border","2px solid  #73AD21");
+		$("#mm").css("border","2px solid gray");
+		$("#m").css("border","2px solid gray");
+		$("#magic").html("<center><b>Model 3 includes:</b><br><ul><li>Quicker acceleration: 0-60 mph in 3.2s</li><li>Top speed: up to 162 mph</li></ul></center>");
+		$("#y").attr("src","images/performance.png");
+		$("#carr").html("<b>Performance (Quicker acceleration: 0-60 mph in 3.2s)	</b>");
+		$("#pricee").html("<b>$51,450</b>");
+	});
+	$("#w").click(function(){
+		$("#w").css("border","2px solid  #73AD21");
+		$("#ww").css("border","2px solid gray");
+		
+	});
+	$("#ww").click(function(){
+		$("#ww").css("border","2px solid  #73AD21");
+		$("#w").css("border","2px solid gray");
+		$("#exte").html("<b>Strong Black</b>");
+	});
+	$("#n").click(function(){
+		$("#n").css("border","2px solid  #73AD21");
+		$("#nn").css("border","2px solid gray");
+		$("#nnn").css("border","2px solid gray");
+		$("#nnnn").css("border","2px solid gray");
+		$("#nnnnn").css("border","2px solid gray");
+		$("#p").attr("src","images/black_car.png");
+		$("#magic2").html("<b>Solid Black</b>");
+		$("#magic3").text("Included");
+		$("#exte").html("<b>Strong Black</b>");
+		$("#colo").html("<b>Already Included</b>");
+
+	});
+	$("#nn").click(function(){
+		$("#nn").css("border","2px solid  #73AD21");
+		$("#nnn").css("border","2px solid gray");
+		$("#n").css("border","2px solid gray");
+		$("#nnnn").css("border","2px solid gray");
+		$("#nnnnn").css("border","2px solid gray");
+		$("#p").attr("src","images/gray_car.png");
+		$("#magic2").html("<b>Metallic Gray</b>");
+		$("#magic3").text("$1,000");
+		$("#exte").html("<b>Mettalic Gray</b>");
+		$("#colo").html("<b>$1,000</b>");
+	});
+	$("#nnn").click(function(){
+		$("#nnn").css("border","2px solid  #73AD21");
+		$("#nn").css("border","2px solid gray");
+		$("#n").css("border","2px solid gray");
+		$("#nnnn").css("border","2px solid gray");
+		$("#nnnnn").css("border","2px solid gray");
+		$("#p").attr("src","images/red_car.png");
+		$("#magic2").html("<b>Red</b>");
+		$("#magic3").text("$1,500");
+		$("#exte").html("<b>Red</b>");
+		$("#colo").html("<b>$1,500</b>");
+	});
+
+	$("#nnnn").click(function(){
+		$("#nnnn").css("border","2px solid  #73AD21");
+		$("#nnn").css("border","2px solid gray");
+		$("#n").css("border","2px solid gray");
+		$("#nn").css("border","2px solid gray");
+		$("#nnnnn").css("border","2px solid gray");
+		$("#p").attr("src","images/blue_car.png");
+		$("#magic2").html("<b>Blue</b>");
+		$("#magic3").text("$1,500");
+		$("#exte").html("<b>Blue</b>");
+		$("#colo").html("<b>$1,500</b>");
+	});
+	$("#nnnnn").click(function(){
+		$("#nnnnn").css("border","2px solid  #73AD21");
+		$("#nnn").css("border","2px solid gray");
+		$("#n").css("border","2px solid gray");
+		$("#nn").css("border","2px solid gray");
+		$("#nn").css("border","2px solid gray");
+		$("#p").attr("src","images/white_car.png");
+		$("#magic2").html("<b>White</b>");
+		$("#magic3").text("$2,000");
+		$("#exte").html("<b>White</b>");
+		$("#colo").html("<b>$2,000</b>");
+	});
+
+$("#ioio").click(function(){
+		$("#ioio").css("border","2px solid  #73AD21");
+		$("#ioioio").css("border","2px solid  gray");
+		$("#ui").attr("src","images/interior_black.png");
+		$("#magic9").html("Included");
+		$("#inte").html("<b>Strong Black</b>");
+		$("#collo").html("<b>No Extra Money</b>")
+		
+	});
+$("#ioioio").click(function(){
+		$("#ioioio").css("border","2px solid  #73AD21");
+		$("#ioio").css("border","2px solid  gray");
+		$("#ui").attr("src","images/interior_white.png");
+		$("#magic9").html("$1,000");
+		$("#inte").html("<b>White</b>");
+		$("#collo").html("<b>$1,000</b>")
+	});
+
+
+
+
+</script>
+</div>
+
+
+<!--Footer Section-->
+<div class="container-fluid" style="padding: 3.2rem;" id="footer">
+	<div class="container">
+		<h3 style="color: white"><ul class="list-inline" style="text-align: center;padding: .2em">
+			<li><a href="https://facebook.com" style="color:#F24259;"><i class="fab fa-facebook"></i></a></li>
+			<li><a href="https://instagram.com" style="color: #F24259;"><i class="fab fa-instagram"></i></a></li>
+			<li><a href="https://twitter.com" style="color: #F24259;"><i class="fab fa-twitter"></i></a></li>
+			<li><a href="https://linkedin.com" style="color: #F24259;"><i class="fab fa-linkedin-in"></i></a></li>
+			<li><a href="https://github.com" style="color: #F24259;"><i class="fab fa-github"></i></a></li>
+		</ul></h3>
+		<div style="text-align: center;display: block;color: white;">
+        © Copyright <strong> Vaibhav & Yashank</strong>. All Rights Reserved.
+      </div>
+
+	</div>
+	
+</div>
+
+
+<!--Back To TOP Car-->
+<div class="car-top  car-down hidden-xs " >
+  <span><img src="images/car.png" alt="" ></span>
+</div>
+<style type="text/css">
+.car-top { width: 85px; position: fixed; bottom: -180px; right: 30px; z-index: 9999; opacity: 1; cursor: pointer; }
+.car-top.show { bottom: 5% !important; -webkit-transition: 1.0s; -moz-transition: 1.0s; transition: 1.0s; }
+.car-top.car-run { bottom: 100% !important; -webkit-transition: 1.0s; -moz-transition: 1.0s; transition: 1.0s; }
+.car-top.car-down { -webkit-transition: 1.0s; -ms-transition: 1.0s; -o-transition: 1.0s; -moz-transition: 1.0s; transition: 1.0s; }
+.car-top:before, .car-top:after { content: ""; position: absolute; -o-transition: 0.2s; -webkit-transition: 0.2s; -ms-transition: 0.2s; -moz-transition: 0.2s; transition: 0.2s; opacity: 0; }
+.car-top:hover:before, .car-top:hover:after, .car-top.car-run:before, .car-top.car-run:after { opacity: 1; }
+.car-top:before, .car-top.car-run:before { top: -1px; left: 0px; width: 85px; height: 89px; background: url(images/car-focus.png) no-repeat 0 0; }
+</style>
+<script type="text/javascript"> 
+      var $scrolltop = $('.car-top');
+      $scrolltop.on('click', function () {
+          $('html,body').animate({
+                    scrollTop: 0
+             }, 800);
+          $(this).addClass("car-run");
+          setTimeout(function(){ $scrolltop.removeClass('car-run');},1000);
+          return false;
+      });
+      var $window=$(document);
+      $window.on('scroll', function () {   
+          if($window.scrollTop() >= 200) {
+              $scrolltop.addClass("show");
+              $scrolltop.addClass("car-down");
+             } else {
+               $scrolltop.removeClass("show");
+               setTimeout(function(){ $scrolltop.removeClass('car-down');},300);
+            }
+       });
+
+</script>
+</body>
+</html>

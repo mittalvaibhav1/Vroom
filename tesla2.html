@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tesla</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="logo/tesla1.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+</head>
+
+<body style="font-family: 'Montserrat', sans-serif;">
+  <style type="text/css">
+    .navbar-header {
+      float: none;
+    }
+
+    .navbar-toggle {
+      display: block;
+    }
+
+    .navbar-collapse.collapse {
+      display: none !important;
+    }
+
+    .navbar-nav {
+      float: none !important;
+    }
+
+    .navbar-nav li {
+      float: none;
+    }
+
+    .navbar-collapse.collapse.in {
+      display: block !important;
+    }
+
+
+
+
+    .button1 {
+      border-radius: 4px;
+      background-color: #343b40;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 10px;
+      width: 200px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .button1 span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button1 span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button1:hover span {
+      padding-right: 25px;
+    }
+
+    .button1:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+  </style>
+  <!--NavBar Section-->
+  <nav class="navbar navbar-inverse navbar-fixed-top" style="position: absolute;">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html"><img src="images/t.png" class="img-responsive"
+          style="height:1.7rem;"></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html"><span class="fa fa-home"> </span> Home</a></li>
+        <li><a href="supercars.html"><span class="fa fa-car"> </span> Supercars</a></li>
+        <li><a href="news.html"><span class="fa fa-newspaper"> </span> News</a></li>
+      </ul>
+
+    </div>
+  </nav>
+  <br><br>
+  <img src="images/teslaaa.jpg" class="img-responsive" style="height: 100%;width: 100%">
+
+  <div class="container">
+    <div class="row">
+      <!--Left Side -->
+      <div class="col-lg-5 showcase-left">
+        <div>
+          <br><br>
+          <h3>Safety</h3>
+          <h1>Built For Safety</h1>
+          <p>
+            Safety is the most important part of the overall Model 3 design. The metal structure is a combination of
+            aluminum and steel, for maximum strength in every area. In a roof-crush test, Model 3 resisted four times
+            its own mass, even with an all-glass roof: that's the same weight as two full-grown African elephants</p>
+        </div>
+
+      </div>
+      <!-- Right side-->
+      <div class="col-lg-7 showcase-right">
+        <div>
+          <img src="images/tesla_safety.png" class="img-responsive" style="float: right;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- All wheel div-->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-1 showcase-left"></div>
+      <div class="col-lg-7 showcase-left">
+        <img src="images/model3allwheel.jpg" class="img-responsive" style="height: 70%;width: 70%;">
+
+      </div>
+      <div class="col-lg-4 showcase-right">
+        <h3>All Wheel Drive</h3>
+        <h1>Dual Motor</h1>
+        <p>Tesla All-Wheel Drive has two independent motors. Unlike traditional all-wheel drive systems, these two
+          motors digitally control torque to the front and rear wheels—for far better handling and traction control.
+          Your car can drive on either motor, so you never need to worry about getting stuck on the road. If one motor
+          stops working, you can safely continue to your destination with the second.</p>
+      </div>
+    </div>
+  </div>
+  <!--Auto Pilot -->
+
+  <div class="container">
+    <div class="row">
+      <!--Left Side -->
+
+      <div class="col-lg-1 showcase-left"></div>
+      <div class="col-lg-4 showcase-left">
+        <div>
+          <br><br>
+          <h3>Autopilot</h3>
+          <h1>Future Of Driving</h1>
+          <p>
+            Autopilot advanced safety and convenience features are designed to assist you with the most burdensome parts
+            of driving. All new Tesla cars come standard with driver assistance features such as emergency braking,
+            collision warning and blind-spot monitoring.</p>
+        </div>
+
+      </div>
+      <!-- Right side-->
+      <div class="col-lg-7 showcase-right">
+        <div>
+          <img src="images/tesla_autopilot.png" class="img-responsive" style="float: right;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Interior -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 showcase-left">
+        <img src="images/model3_interior.jpg" class="img-responsive" style="height: 70%;width: 70%;">
+
+      </div>
+      <div class="col-lg-4 showcase-right">
+        <h3>Interior</h3>
+        <h1>Built Around Driver</h1>
+        <p>The inside of Model 3 is unlike any other car. You can use your smartphone as a key, and access all driver
+          controls in the central 15-inch touchscreen. The all-glass roof extends from front to back, creating a sense
+          of openness from every seat..</p>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    if ($(window).width() <= 768) {
+      $('.showcase-left,.showcase-right').addClass('top');
+      $('.top').removeClass('.showcase-left,showcase-right');
+    }
+  </script>
+
+  <!--OTHER MODELS -->
+  <div class="container">
+    <center>
+      <h3>OUR</h3>
+      <h1><b>OTHER MODELS</b></h1>
+    </center>
+    <hr>
+  </div>
+
+
+  <!--Brand Tiles-->
+  <style>
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      width: 100%;
+      border-radius: 4px;
+      height: 18.5rem;
+      background-repeat: no-repeat;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    @media screen and (max-width: 900px) {
+      .card {
+        height: 15rem;
+      }
+
+    }
+  </style>
+  <style>
+    @keyframes animate {
+      0% {
+        background-position: 0%;
+      }
+
+      100% {
+        background-position: 400%;
+      }
+    }
+
+    .glow:before {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: 0px;
+      right: 0px;
+      bottom: -5px;
+      z-index: -1;
+      background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+      background-size: 400%;
+      border-radius: 40px;
+      opacity: 0;
+      transition: 0.5s;
+
+
+    }
+
+    .glow:hover:before {
+
+      filter: blur(20px);
+      opacity: 1;
+      animation: animate 5s linear infinite;
+    }
+  </style>
+  <div class="container-fluid" style="margin: auto;">
+    <div class="row">
+      <div class="col-sm-4">
+        <a href="tesla2.html" target="_blank" class="glow">
+          <div class="card tesla "
+            style="background-color: white;background-image: url('images/modelx.jpg'); background-size: 100%;">
+
+          </div>
+        </a>
+        <center>
+          <h3>MODEL X</h3>
+        </center>
+      </div>
+      <div class="col-sm-4">
+        <a href="https://www.bentleymotors.com/en.html" target="_blank" class="glow">
+          <div class="card "
+            style="background-color: white;background-image: url('images/models.jfif'); background-size: 100% ">
+
+          </div>
+        </a>
+        <center>
+          <h3>MODEL S</h3>
+        </center>
+      </div>
+      <div class="col-sm-4 ">
+        <a href="https://www.astonmartin.com/" target="_blank" class="glow">
+          <div class="card"
+            style="background-color:white ;background-image: url('images/roadster.jpg'); background-size: 100% ">
+
+          </div>
+        </a>
+        <center>
+          <h3>ROADSTER</h3>
+        </center>
+      </div>
+    </div>
+    <br>
+  </div>
+
+  <div class="container">
+    <center><button class="button1" data-toggle="modal" data-target="#my"><span>Book Now </span></button></center>
+  </div>
+  <style type="text/css">
+    section-head h1:before {
+      content: '';
+      width: 1px;
+      height: 35px;
+      background: #F24259;
+      position: absolute;
+      left: -1px;
+      bottom: 0;
+      box-sizing: border-box;
+    }
+
+    .form {
+      background: #F24259;
+      border: 1px solid #F24259;
+      color: #fff;
+      padding: 10px 30px;
+      margin-top: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      position: relative;
+      transition: 0.3s ease;
+    }
+
+    .form:hover {
+      background-color: #fff;
+      color: #F24259;
+    }
+  </style>
+
+  <div id="my" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times</button>
+          <h4 class="modal-title"><b>BOOKING</b></h4>
+
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal " style="margin-left: 2.5%;margin-right: 2.5%">
+            <div class="form-group">
+
+              <div class="col-sm-6">
+                <input type="text" id="name" class="form-control" placeholder="Name">
+              </div>
+              <div class="col-sm-6">
+                <input type="email" id="email" class="form-control" placeholder="Email">
+              </div>
+
+            </div>
+            <div class="form-group">
+
+              <div class="col-sm-12">
+                <input type="text" id="subject" class="form-control" placeholder="MODEL 3" disabled>
+              </div>
+
+            </div>
+            <div class="form-group">
+
+              <div class="col-sm-12"><textarea placeholder="Adress" rows="4" class="form-control"></textarea></div>
+
+            </div>
+            <div class="form-group">
+              <div class="col-md-12 text-center">
+                <button type="submit" class="form">Book</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <br><br>
+
+  <!--Footer Section-->
+  <div class="container-fluid" style="background-color: #343b40;padding: 3.2rem;">
+    <div class="container">
+      <h3 style="color: white">
+        <ul class="list-inline" style="text-align: center;padding: .2em">
+          <li><a href="https://facebook.com" style="color:#F24259;"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://instagram.com" style="color: #F24259;"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com" style="color: #F24259;"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://linkedin.com" style="color: #F24259;"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://github.com" style="color: #F24259;"><i class="fab fa-github"></i></a></li>
+        </ul>
+      </h3>
+      <div style="text-align: center;display: block;color: white;">
+        © Copyright <strong> Vaibhav & Yashank</strong>. All Rights Reserved.
+      </div>
+
+    </div>
+
+  </div>
+  <!--CONTENT LATENTCY SCRIPT-->
+  <script>
+    window.sr = ScrollReveal();
+    //below is for +image slide up
+    sr.reveal('#imageslideup', {
+      duration: 1500,
+      origin: 'bottom',
+      distance: '300px'
+    });
+
+    sr.reveal('.myharsh', {
+      duration: 1000,
+      origin: 'top',
+      distance: '300px'
+    });
+    sr.reveal('.showcase-left', {
+      duration: 2000,
+      origin: 'left',
+      distance: '20%'
+    });
+    sr.reveal('.showcase-right', {
+      duration: 2000,
+      origin: 'right',
+      distance: '20%'
+    });
+    sr.reveal('.showcase-btn', {
+      duration: 2000,
+      delay: 1000,
+      origin: 'bottom'
+    });
+    sr.reveal('#testimonial div', {
+      duration: 2000,
+      origin: 'bottom'
+    });
+    sr.reveal('.top', {
+      duration: 2000,
+      origin: 'left',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+    sr.reveal('.bottom', {
+      duration: 2000,
+      origin: 'right',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+  </script>
+
+</body>
+
+</html>

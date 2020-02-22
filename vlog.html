@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vroom | Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="logo/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/vlog.css">
+      <link rel="stylesheet" href="css/animate.css">
+  <script type="text/javascript" src="js/relax.js"></script>
+  <script type="text/javascript" src="js/wow.js"></script>
+
+</head>
+
+<body style="font-family: 'Montserrat', sans-serif;font-weight: 900">
+    <style type="text/css">
+        body {
+            background-color: #F7F7F7;
+            transition: all 0.5s ease-in-out
+        }
+
+        #contact {
+            background-color: white;
+            transition: all 0.5s ease-in-out
+        }
+
+        #footer {
+            background-color: #343b40;
+            transition: all 0.5s ease-in-out
+        }
+    </style>
+    <script type="text/javascript">
+    new WOW().init();
+  </script>
+
+    <!--Dark Mode-->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("body").toggleClass("dark");
+            $("#mode").click(function () {
+                $("body").toggleClass("dark")
+            });
+        });
+    </script>
+    <style type="text/css">
+        .dark {
+            background-color: black !important;
+            transition: all 0.5s ease-in-out
+        }
+
+        .dark h1 {
+            color: white;
+            transition: all 0.5s ease-in-out
+        }
+
+        .dark input {
+            color: black;
+            transition: all 0.5s ease-in-out
+        }
+
+        .dark #contact {
+            background-color: black;
+            color: white;
+            transition: all 0.5s ease-in-out
+        }
+
+        .dark #nav {
+            background-color: black;
+            transition: all 0.5s ease-in-out
+        }
+
+        .dark #footer {
+            background-color: black;
+            transition: all 0.5s ease-in-out
+        }
+
+        .dark #mo {
+            background-color: black;
+            color: white;
+            transition: all 0.5s ease-in-out
+        }
+
+        .dark #mo input {
+            color: black;
+            transition: all 0.5s ease-in-out
+        }
+
+        .dark #closee {
+            color: white;
+            transition: all 0.5s ease-in-out
+        }
+
+        .dark #closee:hover {
+            color: #FF1800;
+        }
+    </style>
+
+    <!--Cross Animation-->
+    <style type="text/css">
+        .bar1,
+        .bar2,
+        .bar3 {
+            transition: 0.3s;
+        }
+
+        .change .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+            transform: rotate(-45deg) translate(-7px, 0px);
+        }
+
+        .change .bar2 {
+            opacity: 0;
+        }
+
+        .change .bar3 {
+            -webkit-transform: rotate(45deg) translate(-7px, -8px);
+            transform: rotate(45deg) translate(-8px, -2px);
+        }
+    </style>
+    <script type="text/javascript">
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+    <!-- Search Modal -->
+    <div id="modalSearch" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content" id="mo">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" id="closee"><span
+                            class="glyphicon glyphicon-remove"></span></button>
+                    <h4 class="modal-title">Search VRoom</h4>
+                </div>
+                <div class="modal-body">
+                    <script>
+                        (function () {
+                            var cx = '011178486855581426958:ri5d8bbsa-k';
+                            var gcse = document.createElement('script');
+                            gcse.type = 'text/javascript';
+                            gcse.async = true;
+                            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(gcse, s);
+                        })();
+                    </script>
+
+                    <gcse:search></gcse:search>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <style type="text/css">
+        .reset-box-sizing,
+        .reset-box-sizing *,
+        .reset-box-sizing *:before,
+        .reset-box-sizing *:after,
+        .gsc-inline-block {
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+        }
+
+        input.gsc-input,
+        .gsc-input-box,
+        .gsc-input-box-hover,
+        .gsc-input-box-focus,
+        .gsc-search-button {
+            box-sizing: content-box;
+            line-height: normal;
+        }
+
+        .modal .modal-dialog {
+            width: 800px;
+            max-width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#gsearch").click(function () {
+                var q = $("#query").val();
+                $("#gsc-i-id1").val(q);
+                $(".gsc-search-button").click();
+                $("#query").val("");
+            })
+        })
+    </script>
+    <!--Navbar Section-->
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-toggle" style="border:none!important; background-color: inherit;"
+                    data-toggle="collapse" data-target="#myNavbar" onclick="myFunction(this)">
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </div>
+                <a class="navbar-brand" href="#">VRoom</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="supercars.html">Supercars</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">More <span class="caret"></span></a>
+                        <ul class="dropdown-menu" id="dw">
+                            <li><a href="#">Vloggers</a></li>
+                            <li><a href="com.html">Bloggers</a></li>
+                            <li class="disabled"><a href="#">Newsletter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="signup.html"><span class="fa fa-user"></span> Sign Up</a></li>
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li class=" hidden-xs"><label class="switch">
+                            <center><input type="checkbox" id="mode" checked><span class="slider round"></span></center>
+                        </label></li>
+                </ul>
+                <form class="navbar-form navbar-right" action="#">
+                    <div class="input-group search-box">
+                        <input type="search" q="googlesearch" class=" search-txt" placeholder="Search" id="query">
+                        <div class="input-group-btn">
+                            <a class="search-btn" data-toggle="modal" data-target="#modalSearch" id="gsearch">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <style type="text/css">
+        .search-box {
+            background: #2f3640;
+            height: 10px;
+            border-radius: 40px;
+            padding: 2px;
+        }
+
+        .search-box:hover .search-txt {
+            width: 240px;
+
+        }
+
+        .search-box:hover .search-btn {
+            background: white;
+            color: red;
+            text-decoration: none;
+        }
+
+        .search-btn {
+            color: #e84118;
+            float: right;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #2f3640;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.4s;
+            color: white;
+            cursor: pointer;
+        }
+
+        .search-btn i {
+            font-size: 20px;
+        }
+
+        .search-txt {
+            border: none;
+            background: none;
+            outline: none;
+            float: left;
+            padding-left: 2px;
+            color: white;
+            font-size: 12px;
+            transition: 0.4s;
+            line-height: 30px;
+            width: 0px;
+            font-weight: bold;
+        }
+    </style>
+    <style>
+        .switch {
+
+            position: relative;
+            top: 32%;
+            display: inline-block;
+            width: 50px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 50%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+            top: 0%;
+        }
+
+        input:checked+.slider {
+            background-color: #636565;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px black;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+
+    <section class="container" style="margin-top: 5em">
+
+        <div class="row active-with-click">
+            <div class="col-md-4 col-sm-12 col-xs-12 wow zoomIn">
+                <article class="material-card Red">
+                    <h2>
+                        <span>Shmee150</span>
+                        <strong>
+                            <i class="fa fa-fw fa-star"></i>
+                            Subscribers: 742,399
+                        </strong>
+                    </h2>
+                    <div class="mc-content">
+                        <div class="img-container">
+                            <img class="img-responsive" src="img/v1.jpg">
+                        </div>
+                        <div class="mc-description">
+                            Cars : McLaren 675LT, Ferrari FF, Porsche Cayman GT4<br>
+                            YT : <a href="https://www.youtube.com/channel/UCIRgR4iANHI2taJdz8hjwLw">Shmee150 </a>
+                        </div>
+                    </div>
+                    <a class="mc-btn-action">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div class="mc-footer">
+                        <h4>
+                            Social
+                        </h4>
+                        <a class="fab fa-facebook"></a>
+                        <a class="fab fa-twitter"></a>
+                        <a class="fab fa-linkedin-in"></a>
+                        <a class="fab fa-google-plus-g"></a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 wow zoomIn">
+                <article class="material-card Pink">
+                    <h2>
+                        <span>Mr JWW</span>
+                        <strong>
+                            <i class="fa fa-fw fa-star"></i>
+                            Subscribers: 92,345
+                        </strong>
+                    </h2>
+                    <div class="mc-content">
+                        <div class="img-container">
+                            <img class="img-responsive" src="img/v2.jpg">
+                        </div>
+                        <div class="mc-description">
+                            Cars: Porsche 911 GT3, Range Rover, Ferrari F12<br>
+                            YT : <a href="https://www.youtube.com/channel/UCK_zuVq6ZpSRMjsZ5JRPx5g">Mr JWW</a>
+                        </div>
+                    </div>
+                    <a class="mc-btn-action">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div class="mc-footer">
+                        <h4>
+                            Social
+                        </h4>
+                        <a class="fab fa-facebook"></a>
+                        <a class="fab fa-twitter"></a>
+                        <a class="fab fa-linkedin-in"></a>
+                        <a class="fab fa-google-plus-g"></a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 wow zoomIn">
+                <article class="material-card Purple">
+                    <h2>
+                        <span>Supercars of London</span>
+                        <strong>
+                            <i class="fa fa-fw fa-star"></i>
+                            Subscribers: 465,062
+                        </strong>
+                    </h2>
+                    <div class="mc-content">
+                        <div class="img-container">
+                            <img class="img-responsive" src="img/v3.jpg">
+                        </div>
+                        <div class="mc-description">
+                            Cars: Mercedes AMG GT S<br>
+                            YT : <a href="https://www.youtube.com/channel/UCyoSWGYKkusssZWzRrsX4RA">Supercars of
+                                London</a>
+                        </div>
+                    </div>
+                    <a class="mc-btn-action">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div class="mc-footer">
+                        <h4>
+                            Social
+                        </h4>
+                        <a class="fab fa-facebook"></a>
+                        <a class="fab fa-twitter"></a>
+                        <a class="fab fa-linkedin-in"></a>
+                        <a class="fab fa-google-plus-g"></a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 wow zoomIn">
+                <article class="material-card Deep-Purple">
+                    <h2>
+                        <span>Lord Aleem</span>
+                        <strong>
+                            <i class="fa fa-fw fa-star"></i>
+                            Subscribers: 263,261
+                        </strong>
+                    </h2>
+                    <div class="mc-content">
+                        <div class="img-container">
+                            <img class="img-responsive" src="img/v4.jpg">
+                        </div>
+                        <div class="mc-description">
+                            Cars: Porsche 911 Turbo S, Mercedes C63 AMG, Mercedes G-Class<br>
+                            YT : <a href="https://www.youtube.com/channel/UCSuhXeiPBIwYO4mZzn5hKjA">Lord Aleem</a>
+                        </div>
+                    </div>
+                    <a class="mc-btn-action">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div class="mc-footer">
+                        <h4>
+                            Social
+                        </h4>
+                        <a class="fab fa-facebook"></a>
+                        <a class="fab fa-twitter"></a>
+                        <a class="fab fa-linkedin-in"></a>
+                        <a class="fab fa-google-plus-g"></a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 wow zoomIn">
+                <article class="material-card Indigo">
+                    <h2>
+                        <span>Seen Through Glass</span>
+                        <strong>
+                            <i class="fa fa-fw fa-star"></i>
+                            Subscribers: 152,789
+                        </strong>
+                    </h2>
+                    <div class="mc-content">
+                        <div class="img-container">
+                            <img class="img-responsive" src="img/v5.jpg">
+                        </div>
+                        <div class="mc-description">
+                            Cars: Jaguar F-Type<br>
+                            YT : <a href="https://www.youtube.com/channel/UCrBr8w4ki1xAcQ1JVDp_-Fg">Seen Through
+                                Glass</a>
+                        </div>
+                    </div>
+                    <a class="mc-btn-action">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div class="mc-footer">
+                        <h4>
+                            Social
+                        </h4>
+                        <a class="fab fa-facebook"></a>
+                        <a class="fab fa-twitter"></a>
+                        <a class="fab fa-linkedin-in"></a>
+                        <a class="fab fa-google-plus-g"></a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 wow zoomIn">
+                <article class="material-card Blue">
+                    <h2>
+                        <span>Mighty Car Mods</span>
+                        <strong>
+                            <i class="fa fa-fw fa-star"></i>
+                            Subscribers: 2,979,111
+                        </strong>
+                    </h2>
+                    <div class="mc-content">
+                        <div class="img-container">
+                            <img class="img-responsive" src="img/v6.jpg">
+                        </div>
+                        <div class="mc-description">
+                            They Do The BEST Car Mods EVER!<br>
+                            YT : <a href="https://www.youtube.com/user/mightycarmods">Mighty Car Mods</a>
+                        </div>
+                    </div>
+                    <a class="mc-btn-action">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div class="mc-footer">
+                        <h4>
+                            Social
+                        </h4>
+                        <a class="fab fa-facebook"></a>
+                        <a class="fab fa-twitter"></a>
+                        <a class="fab fa-linkedin-in"></a>
+                        <a class="fab fa-google-plus-g"></a>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </section>
+    <!--Footer Section-->
+    <div class="container-fluid" style="padding: 3.2rem;" id="footer">
+        <div class="container">
+            <h3 style="color: white">
+                <ul class="list-inline" style="text-align: center;padding: .2em">
+                    <li><a href="https://facebook.com" style="color:#F24259;"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://instagram.com" style="color: #F24259;"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li><a href="https://twitter.com" style="color: #F24259;"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://linkedin.com" style="color: #F24259;"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li><a href="https://github.com" style="color: #F24259;"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </h3>
+            <div style="text-align: center;display: block;color: white;">
+                © Copyright <strong><a href="about.html" style="text-decoration: none"> Vaibhav & Yashank</a></strong>. All Rights Reserved.
+            </div>
+
+        </div>
+
+    </div>
+    <!--Back To TOP Car-->
+    <div class="car-top  car-down hidden-xs ">
+        <span><img src="images/car.png" alt=""></span>
+    </div>
+    <style type="text/css">
+        .car-top {
+            width: 85px;
+            position: fixed;
+            bottom: -180px;
+            right: 30px;
+            z-index: 9999;
+            opacity: 1;
+            cursor: pointer;
+        }
+
+        .car-top.show {
+            bottom: 5% !important;
+            -webkit-transition: 1.0s;
+            -moz-transition: 1.0s;
+            transition: 1.0s;
+        }
+
+        .car-top.car-run {
+            bottom: 100% !important;
+            -webkit-transition: 1.0s;
+            -moz-transition: 1.0s;
+            transition: 1.0s;
+        }
+
+        .car-top.car-down {
+            -webkit-transition: 1.0s;
+            -ms-transition: 1.0s;
+            -o-transition: 1.0s;
+            -moz-transition: 1.0s;
+            transition: 1.0s;
+        }
+
+        .car-top:before,
+        .car-top:after {
+            content: "";
+            position: absolute;
+            -o-transition: 0.2s;
+            -webkit-transition: 0.2s;
+            -ms-transition: 0.2s;
+            -moz-transition: 0.2s;
+            transition: 0.2s;
+            opacity: 0;
+        }
+
+        .car-top:hover:before,
+        .car-top:hover:after,
+        .car-top.car-run:before,
+        .car-top.car-run:after {
+            opacity: 1;
+        }
+
+        .car-top:before,
+        .car-top.car-run:before {
+            top: -1px;
+            left: 0px;
+            width: 85px;
+            height: 89px;
+            background: url(images/car-focus.png) no-repeat 0 0;
+        }
+    </style>
+    <script type="text/javascript">
+        var $scrolltop = $('.car-top');
+        $scrolltop.on('click', function () {
+            $('html,body').animate({
+                scrollTop: 0
+            }, 800);
+            $(this).addClass("car-run");
+            setTimeout(function () {
+                $scrolltop.removeClass('car-run');
+            }, 1000);
+            return false;
+        });
+        var $window = $(document);
+        $window.on('scroll', function () {
+            if ($window.scrollTop() >= 200) {
+                $scrolltop.addClass("show");
+                $scrolltop.addClass("car-down");
+            } else {
+                $scrolltop.removeClass("show");
+                setTimeout(function () {
+                    $scrolltop.removeClass('car-down');
+                }, 300);
+            }
+        });
+    </script>
+
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+
+    <script src="js/vlog.js"></script>
+
+
+
+
+</body>
+
+</html>
