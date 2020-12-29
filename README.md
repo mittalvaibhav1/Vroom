@@ -1,3 +1,2 @@
 # Vroom
-Vroom SEM2 Project
-Built Using HTML ,CSS ,JAVASCRIPT ,BOOTSTRAP 3 ,ANGULAR JS , Jquery and Other popular Webframeworks and APIs
+A website to buy/view and get the latest news about the newest supercars. Built using HTML, CSS, javascript, bootstrap 3, angular.js, jQuery.
